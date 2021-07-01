@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "venom-bot": "^3.0.20",
+    "wa-sticker-formatter": "^3.6.0"
+  },
+  "name": "resenhazord",
+  "version": "1.0.0",
+  "description": "Whatsapp chatbot of Resenha with JavaScript and NodeJS",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "./index.js"
+  },
+  "keywords": [
+    "Whatsapp",
+    "Chatbot",
+    "JavaScript",
+    "NodeJS",
+    "Resenha"
+  ],
+  "author": "Sandro Smarzaro",
+  "license": "ISC"
+}
