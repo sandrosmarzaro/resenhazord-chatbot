@@ -9,7 +9,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "./index.js"
+    "start": "src/index.js"
   },
   "keywords": [
     "Whatsapp",
