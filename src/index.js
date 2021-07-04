@@ -5,8 +5,6 @@ venom.create().then((client) => start(client));
 function start (client) {
     client.onMessage(async (message) => {
 
-        await client.addParticipant(message.chatId, "5528999219566", ["5528999219566"]).catch((error) => {});
-
         if ( message.chatId === ",menu" ) {
             const menu = require('../public/scripts/menuString.js');
             console.log(menu);
