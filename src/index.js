@@ -5,9 +5,8 @@ venom.create().then((client) => start(client));
 function start (client) {
     client.onMessage(async (message) => {
 
-        if ( message.chatId === ",menu" ) {
-            const menu = require('../public/scripts/menuString.js');
-            console.log(menu);
+        if ( message.body === ",menu" ) {
+            const menu = require('../public/scripts/menuString');
             await client.sendText(message.chatId, menu);
         }
 
