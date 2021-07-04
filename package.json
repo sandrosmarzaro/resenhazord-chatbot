@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "venom-bot": "^3.0.20",
-    "wa-sticker-formatter": "^3.6.0"
+    "wa-sticker-formatter": "^3.6.0",
+    "jpeg-js": ">=0.4.0"
   },
   "name": "resenhazord",
   "version": "1.0.0",
