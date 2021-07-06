@@ -117,12 +117,9 @@ function start (client) {
                 }
                 else {
                     await client.sendText(message.chatId, `Como não tenho administrador sugiro adicionar esse contato. Caso eu não envie é porque eu gerei um inexistente`);
-                    try{
-                        await client.sendContactVcard(message.chatId, randomPhone, "Número Gerado");
-                    }
-                    catch(newError) {
+                    await client.sendContactVcard(message.chatId, randomPhone, "Número Gerado").catch(async (err) => {
                         await client.sendText(message.chatId, `Gerei um número inexistente!`);
-                    }
+                    });
                 }
             }
             else {
