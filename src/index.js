@@ -3,7 +3,7 @@ const venom = require('venom-bot');
 venom.create().then((client) => start(client));
 
 function start (client) {
-    client.onMessage(async (message) => {
+    client.onAnyMessage(async (message) => {
 
         if ( message.body === ",menu" ) {
             const menu = require('../public/scripts/menuString');
@@ -136,45 +136,31 @@ function start (client) {
             await client.sendImage(message.chatId, link, "randomImage", "Aqui está sua imagem aleatória!");
         }
         
-        else if ( message.body === ",sticker" ){ 
-            /*
-            if ( message.isMedia != false  ) {
-                const fs = require('fs');            
-                const WSF = require('wa-sticker-formatter');
-                const mime = require('mime-types');
-                const image = './src/datas/atencao.jpg';
-                const sticker = new WSF.Sticker(image, { crop: false, animated: false, pack: 'Resenha Pack', author: 'RESENHAZORD' });
-                await sticker.build();
-                const sticBuffer = await sticker.get();
-                
-                fs.writeFile('./src/datas/sticker.webp', sticBuffer, (err) => {
-                    client.sendImageAsSticker(message.chatId, './src/datas/sticker.webp');
-                    if (err) {
-                        console.log("Error: ", err);
-                    }
-                });
-            }*/
-            
-            const fs = require('fs');            
-            const WSF = require('wa-sticker-formatter');
+        else if ( message.caption === ",stic" || message.caption === ",sticrop"){ 
+            const fs = require('fs');
             const mime = require('mime-types');
+            const WSF = require('wa-sticker-formatter');
 
             const buffer = await client.decryptFile(message);
-            const fileName = `../public/images/sticker.${mime.extension(message.mimetype)}`;
-
-            fs.writeFile(fileName, buffer, async (error) => {
+            const fileName = `sticker.${mime.extension(message.mimetype)}`;
+            fs.writeFile(fileName, buffer, async (err) => {
                 
-                const sticker = new WSF.Sticker(fileName, { crop: false, animated: false, pack: 'Resenha Pack', author: 'RESENHAZORD' });
+                const typeMedia = await message.mimetype.split('/');
+                const image = fs.readFileSync('./' + fileName);
+                let sticker;
+                message.caption === ",sticrop" ? sticker = new WSF.Sticker(image, { crop: true, animated: false, pack: 'Resenha Pack', author: 'REZENHAZORD' }) 
+                : sticker = new WSF.Sticker(image, { crop: false,  animated: false, pack: 'Resenha Pack', author: 'REZENHAZORD' });
                 await sticker.build();
                 const sticBuffer = await sticker.get();
-                if ( error ) {
-                    console.log("Error: ", err);
-                }
+                
+                fs.writeFile('sticker.webp', sticBuffer, async (err) =>{
+                    if ( message.mimetype === "image/gif" ) {
 
-                fs.writeFile('../public/images/sticker.webp', sticBuffer, async (err) => {
-                    await client.sendImageAsSticker(message.chatId, '../public/images/sticker.webp');
-                    if ( err ) {
-                        console.log("Error: ", err);
+                        await client.sendImageAsStickerGif(message.chatId, fileName);
+                    }   
+                    else if ( typeMedia[0] === "image" ) {
+                        
+                        await client.sendImageAsSticker(message.chatId, 'sticker.webp');
                     }
                 });
             });
