@@ -22,7 +22,7 @@ _- Bane ou Indica alguém aleatório_
 _- Faça uma figurinha sem corte com a imagem na mensagem_
 
 ,sticrop
-_- Faça uma figurinha com corte com a imagem na mensagem_
+_- Faça uma figurinha com corte tendo a imagem na mensagem_
 
 ,img
 _- Receba uma imagem aleatória SFW_
