@@ -96,12 +96,7 @@ function start (client) {
                 let randomPhone;
                 let isAdmAdd = false;
                 
-                randomPhone = Math.random() * 10000000;
-                randomPhone = String(randomPhone).split(".");
-                randomPhone = randomPhone[0];
-                randomPhone = "552799" + randomPhone + "@c.us";
                 admArrayAdd = await client.getGroupAdmins ( message.chatId );
-                
                 for (let index = 0; index < admArrayAdd.length; index++) {
                     if ( admArrayAdd[index].user == "552899219566" ) {
                         isAdmAdd = true;
@@ -110,10 +105,14 @@ function start (client) {
                 if ( isAdmAdd ) {
                     let added = false;
                     
-                    added = await client.addParticipant(message.chatId, randomPhone, [randomPhone]).catch((error) => {});
-                    if ( !added ) {
-                        await client.sendText(message.chatId, `Gerei um número inexistente!`);
-                    }
+                    do {
+                        randomPhone = Math.random() * 10000000;
+                        randomPhone = String(randomPhone).split(".");
+                        randomPhone = randomPhone[0];
+                        randomPhone = "552799" + randomPhone + "@c.us";
+
+                        added = await client.addParticipant(message.chatId, randomPhone, [randomPhone]);
+                    } while ( !added );
                 }
                 else {
                     await client.sendText(message.chatId, `Como não tenho administrador sugiro adicionar esse contato. Caso eu não envie é porque eu gerei um inexistente`);
@@ -127,19 +126,37 @@ function start (client) {
             }
         }
         
-        else if ( message.body === ",img" ){
-            const link = "https://source.unsplash.com/random";
+        else if ( message.body === ",rule34" ){
+            const fs = require('fs');
+            const puppeteer = require('puppeteer');
 
-            await client.sendImage(message.chatId, link, "randomImage", "Aqui está sua imagem aleatória!");
+            (async () => {
+                const browser = await puppeteer.launch({headless: true});
+                const page = await browser.newPage();
+                await page.goto(`https://rule34.xxx/index.php?page=post&s=random`);
+                
+                const rule34 = await page.evaluate(() => {
+                    const nodeList = document.querySelectorAll('div.flexi img');
+                    const imgArray = [...nodeList];
+                    
+                    const imgList = imgArray.map( ({src}) => ({
+                        src
+                    }));
+                    
+                    return imgList;
+                });
+                await client.sendImage(message.chatId, rule34[0]['src'], "rule34", "Aqui está sua imagem aleatória!");
+                await browser.close();
+            })();
         }
         
-        else if ( message.caption === ",stic" || message.caption === ",sticrop"){ 
+        else if ( message.caption === ",stic" || message.caption === ",sticrop" ){ 
             const fs = require('fs');
             const mime = require('mime-types');
             const WSF = require('wa-sticker-formatter');
 
             const buffer = await client.decryptFile(message);
-            const fileName = `sticker.${mime.extension(message.mimetype)}`;
+            const fileName = `public/images/sticker.${mime.extension(message.mimetype)}`;
             fs.writeFile(fileName, buffer, async (err) => {
                 
                 const typeMedia = await message.mimetype.split('/');
@@ -149,15 +166,16 @@ function start (client) {
                 : sticker = new WSF.Sticker(image, { crop: false,  animated: false, pack: 'Resenha Pack', author: 'REZENHAZORD' });
                 await sticker.build();
                 const sticBuffer = await sticker.get();
+                const pathSticker = "public/images/sticker.webp";
                 
-                fs.writeFile('sticker.webp', sticBuffer, async (err) =>{
+                fs.writeFile(pathSticker, sticBuffer, async (err) =>{
                     if ( message.mimetype === "image/gif" ) {
 
-                        await client.sendImageAsStickerGif(message.chatId, fileName);
+                        await client.sendImageAsStickerGif(message.chatId, pathSticker);
                     }   
                     else if ( typeMedia[0] === "image" ) {
                         
-                        await client.sendImageAsSticker(message.chatId, 'sticker.webp');
+                        await client.sendImageAsSticker(message.chatId, pathSticker);
                     }
                 });
             });
