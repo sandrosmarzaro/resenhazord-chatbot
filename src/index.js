@@ -155,7 +155,7 @@ function start (client) {
             }
         }
         
-        else if ( message.body === ",rule34" ){
+        else if ( message.body === ",img" ){
             const fs = require('fs');
             const puppeteer = require('puppeteer');
 

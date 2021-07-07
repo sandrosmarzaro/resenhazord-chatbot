@@ -13,7 +13,7 @@ _- Xingue o Mateus_
 _- Descubra quantos nargas Borges já fumou_
 
 ,all
-_- Mande uma mensagem marcando todos do grupo_-
+_- Mande uma mensagem marcando todos do grupo_
 
 ,add
 _- Adiciona ou indica alguém aleatório_
