@@ -12,6 +12,9 @@ _- Xingue o Mateus_
 ,borges
 _- Descubra quantos nargas Borges já fumou_
 
+,all
+_- Mande uma mensagem marcando todos do grupo_-
+
 ,add
 _- Adiciona ou indica alguém aleatório_
 
@@ -25,5 +28,5 @@ _- Faça uma figurinha sem corte com a imagem na mensagem_
 _- Faça uma figurinha com corte tendo a imagem na mensagem_
 
 ,img
-_- Receba uma imagem aleatória SFW_
+_- Receba uma imagem aleatória NSFW da Rule34_
 `
