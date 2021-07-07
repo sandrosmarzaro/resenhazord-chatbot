@@ -55,6 +55,35 @@ function start (client) {
             await client.sendText(message.chatId, `A chance de Mangos II nascer agora é ${numberRandom} %`);
         }
 
+        else if (message.body == ',all') {
+            if (message.isGroupMsg) {
+                let members;
+                let users = [];
+                let contacts = '';
+        
+                members = await client.getGroupMembersIds(message.chatId);
+        
+                //cria uma array com os ids dos integrantes
+                for ( member of members ) {
+                    let user = String(member.user);
+                    users.push(user);
+                }
+        
+                //formata os ids em tagged('@0000000000000 ')
+                //cria uma string com todas as tag
+                for ( user of users ) {
+                    let contact = '@' + String(user) + ' ';
+                    contacts += contact;
+                }
+        
+                //envia a mensagem marcando os integrantes
+                await client.sendMentioned(message.chatId, `Chamando todos os cornos ${contacts}`, users);
+            }
+            else {
+                await client.sendText(message.chatId, `Aqui é uma conversa privada, não consigo marcar várias pessoas!`);
+            }
+        }
+
         else if ( message.body === ",ban" ){
             let admArray;
             let membersArray;
