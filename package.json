@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@juliendu11/instagram-downloader": "^0.2.0",
     "jpeg-js": ">=0.4.0",
     "puppeteer": "^5.5.0",
     "venom-bot": "^3.0.20",

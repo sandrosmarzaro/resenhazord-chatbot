@@ -19,7 +19,7 @@ function start (client) {
         
         else if ( message.body === ",borges" ){
             const fs = require('fs');
-            const filePath = '../public/scripts/borges.json';
+            const filePath = 'public/scripts/borges.json';
 
             const fileBuffer = fs.readFileSync(filePath, 'utf-8');
             const fileJson = JSON.parse(fileBuffer);
@@ -111,7 +111,7 @@ function start (client) {
                     }  
                 }
                 else{
-                    await client.sendMentioned(message.chatId, `Como não tenho administrador sugiro banir o @${membersArray[randomIndexMember].id.user}`, [membersArray[randomIndexMember].id.user]);
+                    await client.sendMentioned(message.chatId, `Como não tenho administrador sugiro banir o(a) @${membersArray[randomIndexMember].id.user}`, [membersArray[randomIndexMember].id.user]);
                 }
             }
             else{
@@ -131,24 +131,22 @@ function start (client) {
                         isAdmAdd = true;
                     }
                 }
-                if ( isAdmAdd ) {
-                    let added = false;
-                    
-                    do {
+                let added = false;
+                do {
+                    if ( isAdmAdd ) {                                                
                         randomPhone = Math.random() * 10000000;
                         randomPhone = String(randomPhone).split(".");
                         randomPhone = randomPhone[0];
                         randomPhone = "552799" + randomPhone + "@c.us";
 
-                        added = await client.addParticipant(message.chatId, randomPhone, [randomPhone]);
-                    } while ( !added );
-                }
-                else {
-                    await client.sendText(message.chatId, `Como não tenho administrador sugiro adicionar esse contato. Caso eu não envie é porque eu gerei um inexistente`);
-                    await client.sendContactVcard(message.chatId, randomPhone, "Número Gerado").catch(async (err) => {
-                        await client.sendText(message.chatId, `Gerei um número inexistente!`);
-                    });
-                }
+                        added = await client.addParticipant(message.chatId, randomPhone, [randomPhone]);                        
+                    }
+                    else {
+                        await client.sendText(message.chatId, `Como não tenho administrador sugiro adicionar esse contato. Caso eu não envie é porque eu gerei um inexistente`);
+                        await client.sendContactVcard(message.chatId, randomPhone, [randomPhone], "Número Gerado");
+                        added = true;
+                    }
+                } while ( !added );
             }
             else {
                 await client.sendText(message.chatId, `Aqui é uma conversa privada, não consigo adicionar ninguém!`);
@@ -208,6 +206,36 @@ function start (client) {
                     }
                 });
             });
+        }
+        
+        else if ( (message.isMedia === false  && message.body.substring(0, 3) == ',ig') || message.body === ',ig') {
+            const instagram_download = require ('@juliendu11/instagram-downloader');
+            const fs = require ('fs');
+            let link;
+            
+            if ( message.body === ',ig' ) {
+                link = String(message.quotedMsg.body).split('?')[0];
+            }
+            else {
+                link = String(message.body.substring(4)).split('?')[0];
+            }
+
+            const value = await instagram_download.downloadMedia(link, 'public/images/');
+            console.log(value.file);
+            await client.sendFile(message.chatId, value.file, 'Instagram Video', 'Aqui está seu vídeo do Instagram!').catch((err) => {
+                console.log(`\nerr:\n${err}\n`);                
+            });       
+
+            fs.unlink(value.file, (err) => {
+                if (err) throw err;
+                console.log(err);
+            });
+            if ( value.type === 'Video' ){
+                fs.unlink(value.thumbnail, (err) => {
+                    if (err) throw err;
+                    console.log(err);
+                });
+            }
         }
 
         else if ( message.body === ",adm" ){
