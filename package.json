@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@juliendu11/instagram-downloader": "^0.2.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-binaries": "^3.2.2-3",
     "jpeg-js": ">=0.4.0",
     "puppeteer": "^5.5.0",
     "venom-bot": "^3.0.20",
@@ -10,9 +12,8 @@
   "version": "1.0.0",
   "description": "Whatsapp chatbot of Resenha with JavaScript and NodeJS",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node --trace-warnings src/index.js"
   },
   "keywords": [
     "Whatsapp",

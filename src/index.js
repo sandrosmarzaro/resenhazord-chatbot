@@ -1,9 +1,38 @@
 const venom = require('venom-bot');
 
-venom.create().then((client) => start(client));
+venom.create(
+    'Resenhazord',
+    (base64Qrimg, asciiQR, attempts, urlCode) => {
+        //   console.log('Number of attempts to read the qrcode: ', attempts);
+        //   console.log('Terminal qrcode: ', asciiQR);
+        //   console.log('base64 image string qrcode: ', base64Qrimg);
+        //   console.log('urlCode (data-ref): ', urlCode);
+    },
+    (statusSession, session) => {
+        //   console.log('Status Session: ', statusSession);
+        //   console.log('Session name: ', session);
+    },
+    {
+        //   folderNameToken: 'tokens',
+        //   mkdirFolderToken: '',
+        //   headless: true,
+        //   devtools: false,
+        useChrome: false,
+        //   debug: false,
+        //   logQR: true,
+        //   browserWS: '',
+        //   browserArgs: [''],
+        //   puppeteerOptions: {},
+        //   disableSpins: true,
+        //   disableWelcome: true,
+        //   updatesLog: true,
+        //   autoClose: 60000,
+        //   createPathFileToken: false,
+    }
+).then((client) => start(client));
 
 function start (client) {
-    client.onAnyMessage(async (message) => {
+    client.onMessage(async (message) => {
 
         if ( message.body === ",menu" ) {
             const menu = require('../public/scripts/menuString');
@@ -189,54 +218,85 @@ function start (client) {
                 const typeMedia = await message.mimetype.split('/');
                 const image = fs.readFileSync('./' + fileName);
                 let sticker;
-                message.caption === ",sticrop" ? sticker = new WSF.Sticker(image, { crop: true, animated: false, pack: 'Resenha Pack', author: 'REZENHAZORD' }) 
-                : sticker = new WSF.Sticker(image, { crop: false,  animated: false, pack: 'Resenha Pack', author: 'REZENHAZORD' });
-                await sticker.build();
-                const sticBuffer = await sticker.get();
-                const pathSticker = "public/images/sticker.webp";
-                
-                fs.writeFile(pathSticker, sticBuffer, async (err) =>{
-                    if ( message.mimetype === "image/gif" ) {
 
-                        await client.sendImageAsStickerGif(message.chatId, pathSticker);
-                    }   
-                    else if ( typeMedia[0] === "image" ) {
-                        
+                if ( typeMedia[0] === "video" ) {
+                    
+                    message.caption === ",sticrop" ? 
+                    stickerGif = new WSF.Sticker(image, { 
+                        crop: true, 
+                        animated: true, 
+                        pack: 'Resenha Pack', 
+                        author: 'REZENHAZORD' 
+                    }) 
+                    : stickerGif = new WSF.Sticker(image, { 
+                        crop: false,  
+                        animated: true, 
+                        pack: 'Resenha Pack', 
+                        author: 'REZENHAZORD' });
+
+                    await stickerGif.build();
+                    const sticGifBuffer = await stickerGif.get();
+                    const pathGifSticker = "public/images/sticker.gif";
+
+                    fs.writeFile(pathGifSticker, sticGifBuffer, async (err) =>{
+                        await client.sendImageAsStickerGif(message.chatId, pathGifSticker);
+                    });
+                }
+
+                else if ( typeMedia[0] === "image" ) {
+
+                    message.caption === ",sticrop" ? 
+                    sticker = new WSF.Sticker(image, { 
+                        crop: true, 
+                        animated: false, 
+                        pack: 'Resenha Pack', 
+                        author: 'REZENHAZORD' }) 
+                    : sticker = new WSF.Sticker(image, { 
+                        crop: false,  
+                        animated: false, 
+                        pack: 'Resenha Pack', 
+                        author: 'REZENHAZORD' });
+
+                    await sticker.build();
+                    const sticBuffer = await sticker.get();
+                    const pathSticker = "public/images/sticker.webp";
+
+                    fs.writeFile(pathSticker, sticBuffer, async (err) =>{
                         await client.sendImageAsSticker(message.chatId, pathSticker);
-                    }
-                });
+                    });
+                }                
             });
         }
         
-        else if ( (message.isMedia === false  && message.body.substring(0, 3) == ',ig') || message.body === ',ig') {
-            const instagram_download = require ('@juliendu11/instagram-downloader');
-            const fs = require ('fs');
-            let link;
+        // else if ( (message.isMedia === false  && message.body.substring(0, 3) == ',ig') || message.body === ',ig') {
+        //     const instagram_download = require ('@juliendu11/instagram-downloader');
+        //     const fs = require ('fs');
+        //     let link;
             
-            if ( message.body === ',ig' ) {
-                link = String(message.quotedMsg.body).split('?')[0];
-            }
-            else {
-                link = String(message.body.substring(4)).split('?')[0];
-            }
+        //     if ( message.body === ',ig' ) {
+        //         link = String(message.quotedMsg.body).split('?')[0];
+        //     }
+        //     else {
+        //         link = String(message.body.substring(4)).split('?')[0];
+        //     }
 
-            const value = await instagram_download.downloadMedia(link, 'public/images/');
-            console.log(value.file);
-            await client.sendFile(message.chatId, value.file, 'Instagram Video', 'Aqui está seu vídeo do Instagram!').catch((err) => {
-                console.log(`\nerr:\n${err}\n`);                
-            });       
+        //     const value = await instagram_download.downloadMedia(link, 'public/images/');
+        //     console.log(value.file);
+        //     await client.sendFile(message.chatId, value.file, 'Instagram Video', 'Aqui está seu vídeo do Instagram!').catch((err) => {
+        //         console.log(`\nerr:\n${err}\n`);                
+        //     });       
 
-            fs.unlink(value.file, (err) => {
-                if (err) throw err;
-                console.log(err);
-            });
-            if ( value.type === 'Video' ){
-                fs.unlink(value.thumbnail, (err) => {
-                    if (err) throw err;
-                    console.log(err);
-                });
-            }
-        }
+        //     fs.unlink(value.file, (err) => {
+        //         if (err) throw err;
+        //         console.log(err);
+        //     });
+        //     if ( value.type === 'Video' ){
+        //         fs.unlink(value.thumbnail, (err) => {
+        //             if (err) throw err;
+        //             console.log(err);
+        //         });
+        //     }
+        // }
 
         else if ( message.body === ",adm" ){
             let admList;
