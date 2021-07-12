@@ -268,37 +268,53 @@ function start (client) {
             });
         }
         
-        // else if ( (message.isMedia === false  && message.body.substring(0, 3) == ',ig') || message.body === ',ig') {
-        //     const instagram_download = require ('@juliendu11/instagram-downloader');
-        //     const fs = require ('fs');
-        //     let link;
+        else if ( (message.isMedia === false  && message.body.substring(0, 3) == ',ig') || message.body === ',ig') {
+            const instagram_download = require ('@juliendu11/instagram-downloader');
+            const fs = require ('fs');
+            let link;
             
-        //     if ( message.body === ',ig' ) {
-        //         link = String(message.quotedMsg.body).split('?')[0];
-        //     }
-        //     else {
-        //         link = String(message.body.substring(4)).split('?')[0];
-        //     }
+            if ( message.body === ',ig' ) {
+                link = String(message.quotedMsg.body).split('?')[0];
+            }
+            else {
+                link = String(message.body.substring(4)).split('?')[0];
+            }
 
-        //     const value = await instagram_download.downloadMedia(link, 'public/images/');
-        //     console.log(value.file);
-        //     await client.sendFile(message.chatId, value.file, 'Instagram Video', 'Aqui está seu vídeo do Instagram!').catch((err) => {
-        //         console.log(`\nerr:\n${err}\n`);                
-        //     });       
+            const value = await instagram_download.downloadMedia(link, 'public/images/');
+            console.log(value.file);
+            await client.sendFile(message.chatId, value.file, 'Instagram Video', 'Aqui está seu vídeo do Instagram!').catch((err) => {
+                console.log(`\nerr:\n${err}\n`);                
+            });       
 
-        //     fs.unlink(value.file, (err) => {
-        //         if (err) throw err;
-        //         console.log(err);
-        //     });
-        //     if ( value.type === 'Video' ){
-        //         fs.unlink(value.thumbnail, (err) => {
-        //             if (err) throw err;
-        //             console.log(err);
-        //         });
-        //     }
-        // }
+            fs.unlink(value.file, (err) => {
+                if (err) throw err;
+                console.log(err);
+            });
+            if ( value.type === 'Video' ){
+                fs.unlink(value.thumbnail, (err) => {
+                    if (err) throw err;
+                    console.log(err);
+                });
+            }
+        }
+        
+        else if ( message.body.slice(0, 3) === ",tt" ) {
+            const videoUrlLink = require('video-url-link');
+            const link = message.body.slice(4, message.body.length);
 
-        else if ( message.body === ",adm" ){
+            videoUrlLink.twitter.getInfo(link, {}, async (error, info) => {
+                if (error) {
+                    console.error(error);
+                } else {
+                    // console.log();
+                    // console.log();
+                }
+                // console.log(info.variants[1]['url']);
+                await client.sendFile(message.chatId, info.variants[1]['url'], `${info.full_text}`, 'Aqui está seu vídeo do Twitter!');
+            });
+        }
+
+        else if ( message.body === ",adm" ) {
             let admList;
             let isAdm = false;
 
