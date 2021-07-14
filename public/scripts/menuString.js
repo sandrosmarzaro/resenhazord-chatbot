@@ -27,6 +27,12 @@ _- Faça uma figurinha sem corte com a imagem na mensagem_
 ,sticrop
 _- Faça uma figurinha com corte tendo a imagem na mensagem_
 
+,ig
+_- Receba o video baixado do Instagram com o link especificado_
+
+,tt
+_- Receba o video baixado do Twitter com o link especificado_
+
 ,img
 _- Receba uma imagem aleatória NSFW da Rule34_
 `

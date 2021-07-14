@@ -1,18 +1,19 @@
 {
-  "dependencies": {
-    "@juliendu11/instagram-downloader": "^0.2.0",
-    "ffmpeg": "^0.0.4",
-    "ffmpeg-binaries": "^3.2.2-3",
-    "jpeg-js": ">=0.4.0",
-    "puppeteer": "^5.5.0",
-    "venom-bot": "^3.0.20",
-    "video-url-link": "^0.1.5",
-    "wa-sticker-formatter": "^3.6.0"
-  },
   "name": "resenhazord",
   "version": "1.0.0",
-  "description": "Whatsapp chatbot of Resenha with JavaScript and NodeJS",
+  "description": "Whatsapp chatbot with JavaScript and NodeJS make for Resenha",
   "main": "index.js",
+  "dependencies": {
+    "ffmpeg": "0.0.4",
+    "instagram-url-direct": "^1.0.9",
+    "puppeteer": "^10.1.0",
+    "venom-bot": "^3.0.21",
+    "video-url-link": "^0.1.5",
+    "wa-sticker-formatter": "^3.6.0",
+    "youtube-stream-url": "^2.0.2",
+    "ytdl-core": "^4.8.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "start": "node --trace-warnings src/index.js"
   },
@@ -23,6 +24,14 @@
     "NodeJS",
     "Resenha"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandroSmarzaro/resenhazord.git"
+  },
   "author": "Sandro Smarzaro",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SandroSmarzaro/resenhazord/issues"
+  },
+  "homepage": "https://github.com/SandroSmarzaro/resenhazord#readme"
 }

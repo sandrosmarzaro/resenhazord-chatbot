@@ -1,3 +1,4 @@
+const path = require('path');
 const venom = require('venom-bot');
 
 venom.create(
@@ -17,7 +18,7 @@ venom.create(
         //   mkdirFolderToken: '',
         //   headless: true,
         //   devtools: false,
-        useChrome: false,
+        useChrome: true,
         //   debug: false,
         //   logQR: true,
         //   browserWS: '',
@@ -33,7 +34,7 @@ venom.create(
 
 function start (client) {
     client.onMessage(async (message) => {
-
+        
         if ( message.body === ",menu" ) {
             const menu = require('../public/scripts/menuString');
             await client.sendText(message.chatId, menu);
@@ -83,33 +84,29 @@ function start (client) {
             numberRandom = numberRandom.replace('.', ',');
             await client.sendText(message.chatId, `A chance de Mangos II nascer agora é ${numberRandom} %`);
         }
-
-        else if (message.body == ',all') {
-            if (message.isGroupMsg) {
+        
+        else if (message.body.substring(0,4) == ',all') {
+            
+            if ( message.isGroupMsg ) {
                 let members;
                 let users = [];
                 let contacts = '';
         
                 members = await client.getGroupMembersIds(message.chatId);
         
-                //cria uma array com os ids dos integrantes
                 for ( member of members ) {
                     let user = String(member.user);
                     users.push(user);
                 }
-        
-                //formata os ids em tagged('@0000000000000 ')
-                //cria uma string com todas as tag
+
                 for ( user of users ) {
                     let contact = '@' + String(user) + ' ';
                     contacts += contact;
                 }
-        
-                //envia a mensagem marcando os integrantes
-                await client.sendMentioned(message.chatId, `Chamando todos os cornos ${contacts}`, users);
+                await client.sendMentioned(message.chatId, `${message.body.substring(5, message.body.length)} ${contacts}`, users);
             }
             else {
-                await client.sendText(message.chatId, `Aqui é uma conversa privada, não consigo marcar várias pessoas!`);
+                await client.sendText(message.chatId, `Aqui é uma conversa privada, não consigo marcar ninguém!`);
             }
         }
 
@@ -267,51 +264,67 @@ function start (client) {
                 }                
             });
         }
-        
-        else if ( (message.isMedia === false  && message.body.substring(0, 3) == ',ig') || message.body === ',ig') {
-            const instagram_download = require ('@juliendu11/instagram-downloader');
-            const fs = require ('fs');
-            let link;
-            
-            if ( message.body === ',ig' ) {
-                link = String(message.quotedMsg.body).split('?')[0];
-            }
-            else {
-                link = String(message.body.substring(4)).split('?')[0];
-            }
 
-            const value = await instagram_download.downloadMedia(link, 'public/images/');
-            console.log(value.file);
-            await client.sendFile(message.chatId, value.file, 'Instagram Video', 'Aqui está seu vídeo do Instagram!').catch((err) => {
-                console.log(`\nerr:\n${err}\n`);                
-            });       
-
-            fs.unlink(value.file, (err) => {
-                if (err) throw err;
-                console.log(err);
-            });
-            if ( value.type === 'Video' ){
-                fs.unlink(value.thumbnail, (err) => {
-                    if (err) throw err;
-                    console.log(err);
-                });
-            }
+        else if (message.body.substring(0, 3) === ",ig") {
+            const instagramGetUrl = require("instagram-url-direct");
+            let links = await instagramGetUrl(message.body.substring(4, message.body.length));
+            await client.sendFile(message.chatId, links['url_list'][0], `Instagram Video`, 'Aqui está seu vídeo do Instagram!');
         }
         
-        else if ( message.body.slice(0, 3) === ",tt" ) {
+        else if ( message.body.substring(0, 3) === ",tt" ) {
             const videoUrlLink = require('video-url-link');
-            const link = message.body.slice(4, message.body.length);
+            const link = message.body.substring(5, message.body.length);
 
             videoUrlLink.twitter.getInfo(link, {}, async (error, info) => {
                 if (error) {
                     console.error(error);
-                } else {
-                    // console.log();
-                    // console.log();
                 }
-                // console.log(info.variants[1]['url']);
-                await client.sendFile(message.chatId, info.variants[1]['url'], `${info.full_text}`, 'Aqui está seu vídeo do Twitter!');
+                else {
+
+                    let linkMp4;
+                    let birateBigger;
+                    let firstMp4 = 0;
+
+                    for (let index = 0; index < info.variants.length; index++) {
+
+                        if ( firstMp4 === 0 && info.variants[index]['content_type'] === "video/mp4") {
+
+                            firstMp4++;
+                            birateBigger = info.variants[index]['bitrate'];
+                            linkMp4 = info.variants[index]['url'];
+                        }
+                        else if (info.variants[index]['bitrate'] > birateBigger && info.variants[index]['content_type'] === "video/mp4") {
+
+                            birateBigger = info.variants[index]['bitrate'];
+                            linkMp4 = info.variants[index]['url'];
+                        }
+                    }
+                    await client.sendFile(message.chatId, linkMp4, `Twitter Video`, `${info.full_text}`);
+                }
             });
+        }
+
+        else if ( message.body.substring(0, 3) === ",yt" ) {
+            const ytdl = require('ytdl-core');
+            const ffmpeg = require('ffmpeg');
+
+            const fs = require('fs');
+            const link = message.body.substring(4, message.body.length);
+            const videoPath = "public/images/youtube.mp4";
+            let stream;
+
+            const info = await ytdl.getInfo(link);
+            // stream = ytdl.downloadFromInfo(info, {quality: 'highest', filter: 'video'});
+            ytdl(link).pipe(fs.createWriteStream(videoPath)
+            .on('finish', async () => await client.sendFile(message.chatId, videoPath, "YouTube Video", `${info.videoDetails.title}`)));
+            
+            // ffmpeg(stream)
+            // .toFormat("mp4")
+            // .saveToFile(videoPath)
+            // .on("end", async function() {
+                
+            // })
+            // 
         }
 
         else if ( message.body === ",adm" ) {
