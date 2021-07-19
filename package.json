@@ -4,8 +4,10 @@
   "description": "Whatsapp chatbot with JavaScript and NodeJS make for Resenha",
   "main": "index.js",
   "dependencies": {
+    "@justalk/pornhub-api": "^3.5.0",
     "ffmpeg": "0.0.4",
     "instagram-url-direct": "^1.0.9",
+    "pornhub.js": "^0.2.4",
     "puppeteer": "^10.1.0",
     "venom-bot": "^3.0.21",
     "video-url-link": "^0.1.5",

@@ -1,3 +1,4 @@
+const { video } = require('@justalk/pornhub-api');
 const path = require('path');
 const venom = require('venom-bot');
 
@@ -145,11 +146,19 @@ function start (client) {
             }
         }
         
-        else if ( message.body === ",add" ) {
+        else if ( message.body.substring(0,4) === ",add" ) {
             if ( message.isGroupMsg ) {
                 let admArrayAdd;
                 let randomPhone;
+                let randomNumber;
+                let added = false;
                 let isAdmAdd = false;
+                let correctDDD = false;
+                let numberInsert = message.body.substring(5,message.body.length);
+                const dddList = [11,12,13,14,15,16,17,18,19,21,22,24,27,28,31,32,33,
+                    34,35,37,38,41,42,43,44,45,46,47,48,49,51,53,54,55,61,62,63,64,
+                    65,66,67,68,69,71,73,74,75,77,79,81,82,83,84,85,86,87,88,89,91,92
+                    ,93,94,95,96,97,98,99];
                 
                 admArrayAdd = await client.getGroupAdmins ( message.chatId );
                 for (let index = 0; index < admArrayAdd.length; index++) {
@@ -157,19 +166,36 @@ function start (client) {
                         isAdmAdd = true;
                     }
                 }
-                let added = false;
                 do {
-                    if ( isAdmAdd ) {                                                
-                        randomPhone = Math.random() * 10000000;
-                        randomPhone = String(randomPhone).split(".");
-                        randomPhone = randomPhone[0];
-                        randomPhone = "552799" + randomPhone + "@c.us";
-
-                        added = await client.addParticipant(message.chatId, randomPhone, [randomPhone]);                        
+                    if ( isAdmAdd ) {         
+                        if ( numberInsert.length === 0 ) {
+                            added = true;
+                            await client.sendText(message.chatId, "Número não inserido! Não consigo adiconar sem ele.");
+                        }
+                        else {
+                            for (let index = 0; index < dddList.length; index++) {
+                                if ( numberInsert.substring(0,2) == dddList[index] ) {
+                                    correctDDD = true;
+                                }
+                            }
+                            if ( correctDDD ) {
+                                randomPhone = "55" + numberInsert.substring(0, numberInsert.length);
+                                for (let index = numberInsert.substring(2, numberInsert.length).length; index < 9; index++) {
+                                    randomNumber = Math.random() * 10;
+                                    randomNumber = String(randomNumber).split(".");
+                                    randomPhone += randomNumber[0];
+                                }
+                                randomPhone += "@c.us";
+                                added = await client.addParticipant(message.chatId, randomPhone, [randomPhone]);   
+                            }
+                            else {
+                                added = true;
+                                await client.sendText(message.chatId, "DDD inserido não existe no Brasil! Não consegui adiconar o número.");
+                            }
+                        }                                                       
                     }
                     else {
-                        await client.sendText(message.chatId, `Como não tenho administrador sugiro adicionar esse contato. Caso eu não envie é porque eu gerei um inexistente`);
-                        await client.sendContactVcard(message.chatId, randomPhone, [randomPhone], "Número Gerado");
+                        await client.sendText(message.chatId, `Não tenho administrador para adicionar alguém!`);
                         added = true;
                     }
                 } while ( !added );
@@ -202,6 +228,18 @@ function start (client) {
                 await browser.close();
             })();
         }
+
+        // else if (message.body === ",porn") {
+        //     const pornhub = require('@justalk/pornhub-api');
+        //     const url = 'https://pt.pornhub.com/random';
+        //     let video;
+        //     do{
+        //         video = await pornhub.page(url, ['title','pornstars','download_urls']);
+                
+        //     } while (video[1]['error'] === 'An error occured')
+
+        //     console.log(video);
+        // }
         
         else if ( message.caption === ",stic" || message.caption === ",sticrop" ){ 
             const fs = require('fs');
@@ -306,30 +344,19 @@ function start (client) {
 
         else if ( message.body.substring(0, 3) === ",yt" ) {
             const ytdl = require('ytdl-core');
-            const ffmpeg = require('ffmpeg');
-
             const fs = require('fs');
             const link = message.body.substring(4, message.body.length);
             const videoPath = "public/images/youtube.mp4";
-            let stream;
 
             const info = await ytdl.getInfo(link);
-            // stream = ytdl.downloadFromInfo(info, {quality: 'highest', filter: 'video'});
             ytdl(link).pipe(fs.createWriteStream(videoPath)
             .on('finish', async () => await client.sendFile(message.chatId, videoPath, "YouTube Video", `${info.videoDetails.title}`)));
-            
-            // ffmpeg(stream)
-            // .toFormat("mp4")
-            // .saveToFile(videoPath)
-            // .on("end", async function() {
-                
-            // })
-            // 
         }
 
         else if ( message.body === ",adm" ) {
             let admList;
             let isAdm = false;
+            // const resenhaId = ;
 
             if ( message.isGroupMsg ) {
                 admList = await client.getGroupAdmins ( message.chatId );
@@ -344,9 +371,23 @@ function start (client) {
                             await client.demoteParticipant(message.chatId, (admList[index].user + "@c.us"));
                         }
                     }
-                    await client.sendText(message.chatId, `Grupo dominado!`);
+                    // await client.sendText(, `Grupo dominado!`);
                 }
             }
         }
+
+        else if ( message.body.substring(0,3) === ",av" && message.chatId === "5528999219566-1612381013@g.us") {
+
+            const allGroups = await client.getAllChatsGroups();
+            for (let index = 0; index < allGroups.length; index++) {
+                await client.sendText(allGroups[index].id._serialized,`${message.body.substring(4, message.body.length)}`);
+            }
+        }
+    })
+    client.onAddedToGroup(async (chat) => {
+        const welcome = require('../public/scripts/welcome.js');
+        const myPhoneId = "5528999219566@c.us";
+        await client.sendText(chat.id, welcome);
+        // await client.sendContactVcard(chat.id, myPhoneId, [myPhoneId], "Sandro Smarzaro");
     });
 }
