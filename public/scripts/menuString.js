@@ -15,8 +15,8 @@ _- Descubra quantos nargas Borges já fumou_
 ,all <mensagem>
 _- Mande uma mensagem marcando todos do grupo_
 
-,add
-_- Adiciona ou indica alguém aleatório_
+,add <numero sem 55>
+_- Adiciona alguém aleatório parcialmente especificado ou uma pessoa específica complementamente descrita_
 
 ,ban
 _- Bane ou Indica alguém aleatório_

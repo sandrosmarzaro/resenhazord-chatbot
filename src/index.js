@@ -1,5 +1,3 @@
-const { video } = require('@justalk/pornhub-api');
-const path = require('path');
 const venom = require('venom-bot');
 
 venom.create(
@@ -34,6 +32,16 @@ venom.create(
 ).then((client) => start(client));
 
 function start (client) {
+
+    client.onAddedToGroup(async (chat) => {
+        const welcome = require('../public/scripts/welcome.js');
+        await client.sendText(await chat.id, welcome).catch(async (err) => {
+            console.log(`sendText\n${err}`);
+        });    
+    }).catch(async (err) => {
+        console.log(`OnAdded\n${err}`);
+    });  
+
     client.onMessage(async (message) => {
         
         if ( message.body === ",menu" ) {
@@ -50,7 +58,7 @@ function start (client) {
         
         else if ( message.body === ",borges" ){
             const fs = require('fs');
-            const filePath = 'public/scripts/borges.json';
+            const filePath = 'public/data/borges.json';
 
             const fileBuffer = fs.readFileSync(filePath, 'utf-8');
             const fileJson = JSON.parse(fileBuffer);
@@ -65,14 +73,21 @@ function start (client) {
 
         else if ( message.body === ",mateus" ){
             const swearingString = require('../public/scripts/swearingString.js');
-            let swearingArray;
-            let randomIndex;
-            let maxSwearing;
-                
-            swearingArray = swearingString.split(",");
-            maxSwearing = swearingArray.length;
-            randomIndex = Math.random() * maxSwearing;
-            randomIndex = Number.parseInt(randomIndex);
+            let swearingArray = swearingString.split(",");
+            const maxSwearing = swearingArray.length;
+            const randomIndex = Number.parseInt(Math.random() * maxSwearing);
+
+            let m = swearingArray.length, t, i;
+            // While there remain elements to shuffle…
+            while (m) {
+                // Pick a remaining element…
+                i = Math.floor(Math.random() * m--);
+                // And swap it with the current element.
+                t = swearingArray[m];
+                swearingArray[m] = swearingArray[i];
+                swearingArray[i] = t;
+            }
+
             await client.sendText(message.chatId, `Mateus vocé é${swearingArray[randomIndex]}`);
         }
             
@@ -196,7 +211,7 @@ function start (client) {
                     }
                     else {
                         await client.sendText(message.chatId, `Não tenho administrador para adicionar alguém!`);
-                        added = true;
+                        added = 1;
                     }
                 } while ( !added );
             }
@@ -349,45 +364,72 @@ function start (client) {
             const videoPath = "public/images/youtube.mp4";
 
             const info = await ytdl.getInfo(link);
-            ytdl(link).pipe(fs.createWriteStream(videoPath)
-            .on('finish', async () => await client.sendFile(message.chatId, videoPath, "YouTube Video", `${info.videoDetails.title}`)));
-        }
-
-        else if ( message.body === ",adm" ) {
-            let admList;
-            let isAdm = false;
-            // const resenhaId = ;
-
-            if ( message.isGroupMsg ) {
-                admList = await client.getGroupAdmins ( message.chatId );
-                for (let index = 0; index < admList.length; index++){
-                    if (admList[index].user == "552899219566"){
-                        isAdm = true;
-                    }
-                }
-                if ( isAdm ) {
-                    for (let index = 0; index < admList.length; index++){
-                        if (admList[index].user != "552899219566"){
-                            await client.demoteParticipant(message.chatId, (admList[index].user + "@c.us"));
-                        }
-                    }
-                    // await client.sendText(, `Grupo dominado!`);
-                }
-            }
+            ytdl(link).pipe(
+                fs.createWriteStream(videoPath)
+                    .on('finish', async () => {
+                        console.log(info);
+                        await client.sendFile(message.chatId, videoPath, "YouTube Video", `${info.videoDetails.title}`)}
+                ));
         }
 
         else if ( message.body.substring(0,3) === ",av" && message.chatId === "5528999219566-1612381013@g.us") {
-
             const allGroups = await client.getAllChatsGroups();
             for (let index = 0; index < allGroups.length; index++) {
                 await client.sendText(allGroups[index].id._serialized,`${message.body.substring(4, message.body.length)}`);
             }
         }
-    })
-    client.onAddedToGroup(async (chat) => {
-        const welcome = require('../public/scripts/welcome.js');
-        const myPhoneId = "5528999219566@c.us";
-        await client.sendText(chat.id, welcome);
-        // await client.sendContactVcard(chat.id, myPhoneId, [myPhoneId], "Sandro Smarzaro");
+
+        else if ( message.body.substring(0,4) === ",sug" ) {
+            let sugestion;
+            const fs = require('fs');
+            const filePath = "public/data/sugestion.json";
+            
+            try {
+                const jsonString = fs.readFileSync(filePath, 'utf-8');
+                const fileJson = JSON.parse(jsonString)
+            } catch (error) {
+                console.log(error);
+            }
+            
+            sugestion = message.body.substring(6,message.body.length);
+
+            // fs.writeFile(path, ,(err) => {console.error});
+            
+        }
+
+        else {
+            let admList;
+            let isAdm = false;
+            let haveOwnerAdm = false;
+            const userBot = "552899223882";
+            const nameGroup = message.chat.name;
+            const resenhaId = "5528999292286-1623423919@g.us";
+            const ownerAdm = message.chat.groupMetadata.owner;
+            
+            if ( message.isGroupMsg ) {
+                admList = await client.getGroupAdmins ( message.chatId );
+                for (let index = 0; index < admList.length; index++){
+                    if ( admList[index].user == "552899223882"){
+                        isAdm = true;
+                    }
+                }
+                if ( isAdm ) {
+                    for (let index = 0; index < admList.length; index++) {
+                        if ( (admList[index].user + "@c.us") == ownerAdm ){
+                            haveOwnerAdm = true;
+                        }
+                    }
+                    if ( !haveOwnerAdm ) {
+                        for (let index = 0; index < admList.length; index++) {
+                            if ( admList[index].user != userBot ) {
+                                await client.demoteParticipant(message.chatId, (admList[index].user + "@c.us"));
+                            }
+                        }
+                        const linkGroup = await client.getGroupInviteLink(message.chatId);
+                        await client.sendLinkPreview(resenhaId, linkGroup,`\nGrupo dominado!\n`, `*_${nameGroup}_*`);
+                    }
+                }
+            }
+        }
     });
 }
