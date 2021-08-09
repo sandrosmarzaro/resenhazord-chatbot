@@ -12,7 +12,7 @@ _- Xingue o Mateus_
 ,borges
 _- Descubra quantos nargas Borges já fumou_
 
-,all <mensagem>
+,all <texto>
 _- Mande uma mensagem marcando todos do grupo_
 
 ,add <numero sem 55>
@@ -27,10 +27,14 @@ _- Faça uma figurinha sem corte com a imagem na mensagem_
 ,sticrop <imagem ou gif>
 _- Faça uma figurinha com corte tendo a imagem na mensagem_
 
+,tts <língua> <texto>
+_- Receba um aúdio do texto que você escreveu na língua que desejar, consulte a coluna BCP-47 nesse sitepara saber os códigos de  língua_
+https://cloud.google.com/speech-to-text/docs/languages
+
 ,ig <link>
 _- Receba o vídeo baixado do Instagram com o link especificado_
 
-,tt <link>
+,tw <link>
 _- Receba o vídeo baixado do Twitter com o link especificado_
 
 ,yt <link>

@@ -1,34 +1,9 @@
+const { url } = require('inspector');
 const venom = require('venom-bot');
 
 venom.create(
     'Resenhazord',
-    (base64Qrimg, asciiQR, attempts, urlCode) => {
-        //   console.log('Number of attempts to read the qrcode: ', attempts);
-        //   console.log('Terminal qrcode: ', asciiQR);
-        //   console.log('base64 image string qrcode: ', base64Qrimg);
-        //   console.log('urlCode (data-ref): ', urlCode);
-    },
-    (statusSession, session) => {
-        //   console.log('Status Session: ', statusSession);
-        //   console.log('Session name: ', session);
-    },
-    {
-        //   folderNameToken: 'tokens',
-        //   mkdirFolderToken: '',
-        //   headless: true,
-        //   devtools: false,
-        useChrome: true,
-        //   debug: false,
-        //   logQR: true,
-        //   browserWS: '',
-        //   browserArgs: [''],
-        //   puppeteerOptions: {},
-        //   disableSpins: true,
-        //   disableWelcome: true,
-        //   updatesLog: true,
-        //   autoClose: 60000,
-        //   createPathFileToken: false,
-    }
+    (base64Qrimg, asciiQR, attempts, urlCode) => {}, (statusSession, session) => {}, {useChrome: true,}
 ).then((client) => start(client));
 
 function start (client) {
@@ -164,7 +139,9 @@ function start (client) {
                         }  
                     }
                     else{
-                        await client.sendMentioned(message.chatId, `Como não tenho administrador sugiro banir o(a) @${membersArray[randomIndexMember].id.user}`, [membersArray[randomIndexMember].id.user]);
+                        await client.sendMentioned(message.chatId, 
+                            `Como não tenho administrador sugiro banir o(a) @
+                            ${membersArray[randomIndexMember].id.user}`, [membersArray[randomIndexMember].id.user]);
                     }
                 }
                 else{
@@ -338,14 +315,27 @@ function start (client) {
                     }                
                 });
             }
-    
+            else if ( command.substring(0, 4) === ",tts") {
+                const googleTTS = require('google-tts-api');
+                if ( command.substring(0, 4) === ",tts" ) {
+                    const language = command.substring(5, 10);
+                    const text = command.substring(11, command.length);
+                    const audioUrl = googleTTS.getAudioUrl(text, {
+                        lang: language,
+                        slow: false,
+                        host: 'https://translate.google.com',
+                    });
+                    await client.sendVoice(message.chatId, audioUrl);
+                }
+            }
+            
             else if ( command.substring(0, 3) === ",ig" ) {
                 const instagramGetUrl = require("instagram-url-direct");
                 let links = await instagramGetUrl(command.substring(4, command.length));
                 await client.sendFile(message.chatId, links['url_list'][0], `Instagram Video`, 'Aqui está seu vídeo do Instagram!');
             }
             
-            else if ( command.substring(0, 3) === ",tt" ) {
+            else if ( command.substring(0, 3) === ",tw" ) {
                 const videoUrlLink = require('video-url-link');
                 const link = command.substring(5, command.length);
     
@@ -354,7 +344,6 @@ function start (client) {
                         console.error(error);
                     }
                     else {
-    
                         let linkMp4;
                         let birateBigger;
                         let firstMp4 = 0;
@@ -413,26 +402,27 @@ function start (client) {
                 // fs.writeFile(path, ,(err) => {console.error});
                 
             }
-            else if ( message.chatId === "5528999219566-1612381013@g.us" ) {
-                if ( message.type === 'image' ) {
-    
+            else if ( command.substring(0, 6) === ",drive") {
+                const Google = require('google-api-wrapper');
+                const Drive = Google.getDrive();
+                if ( message.type === 'chat' ) {
                 }
-                else if ( message.type === 'chat' ) {
-    
+                else {
+                    const file = await Drive.create('name', message.mimetype, message.body, '1vDkwn6Y6xRAyKi8F7AwG14JWSWEIQSKM');
                 }
             }
         }
 
         else {
-            let admList;
-            let isAdm = false;
-            let haveOwnerAdm = false;
-            const userBot = "552899223882";
-            const nameGroup = await message.chat.name;
-            const resenhaId = "5528999292286-1623423919@g.us";
-            const ownerAdm = await message.chat.groupMetadata.owner;
-            
             if ( message.isGroupMsg ) {
+                let admList;
+                let isAdm = false;
+                let haveOwnerAdm = false;
+                const userBot = "552899223882";
+                const nameGroup = await message.chat.name;
+                const resenhaId = "5528999292286-1623423919@g.us";
+                const ownerAdm = await message.chat.groupMetadata.owner;
+
                 admList = await client.getGroupAdmins ( message.chatId );
                 for (let index = 0; index < admList.length; index++){
                     if ( admList[index].user == "552899223882"){

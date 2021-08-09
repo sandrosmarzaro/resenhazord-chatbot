@@ -6,6 +6,8 @@
   "dependencies": {
     "@justalk/pornhub-api": "^3.5.0",
     "ffmpeg": "0.0.4",
+    "google-api-wrapper": "^1.12.0",
+    "google-tts-api": "^2.0.2",
     "instagram-url-direct": "^1.0.9",
     "pornhub.js": "^0.2.4",
     "puppeteer": "^10.1.0",
