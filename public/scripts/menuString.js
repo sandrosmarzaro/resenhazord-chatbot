@@ -18,8 +18,8 @@ _- Mande uma mensagem marcando todos do grupo_
 ,add <numero sem 55>
 _- Adiciona alguém aleatório parcialmente especificado ou uma pessoa específica complementamente descrita_
 
-,ban
-_- Bane ou Indica alguém aleatório_
+,ban @pessoa
+_- Bane ou Indica alguém aleatório ou especificado_
 
 ,stic <imagem ou gif>
 _- Faça uma figurinha sem corte com a imagem na mensagem_
