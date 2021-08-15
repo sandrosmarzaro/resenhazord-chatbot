@@ -21,7 +21,9 @@ const commandType = require('../public/functions/commandType');
 const stealGroup = require('../public/functions/stealGroup');
 const welcome = require('../public/functions/welcome');
 const resenhaXP = require('../public/functions/resenhaXP');
-// const resenhaRegister = require('../public/functions/resenhaRegister');
+const resenhaRegister = require('../public/functions/resenhaRegister');
+const resenhaMyCoin =  require('../public/functions/resenhaMyCoin');
+const resenhaRank = require('../public/functions/resenhaRank');
 
 venom.create(
     'Resenhazord',
@@ -37,6 +39,8 @@ function start (client) {
     });  
 
     client.onMessage(async (message) => {
+        const resenhaId = "5528999670808-1558280621@g.us";
+        const resenhaTestId = "5528999219566-1612381013@g.us";
         let command = await commandType(message);
         
         if ( command[0] === ',' ) {
@@ -100,7 +104,7 @@ function start (client) {
                 await youtube(await client, await message, command);
             }
             
-            else if ( (command.substring(0,3) === ",av") && (message.chatId === "5528999219566-1612381013@g.us") ) {
+            else if ( (command.substring(0,3) === ",av") && (message.chatId === resenhaTestId) ) {
                 await notice(await client, await message, command);
             }
     
@@ -111,11 +115,22 @@ function start (client) {
             else if ( command.substring(0, 6) === ",drive") {
                 await drive(await client, await message, command);
             }
+            else if ( await message.chatId === resenhaId ) {
+                if ( command.substring(0,4) === ",reg" ) {
+                    await resenhaRegister(await client, await message, command);
+                }
+                else if ( command === ",coin") {
+                    await resenhaMyCoin(await client, await message);
+                }
+                else if( command === ",rank") {
+                    await resenhaRank(await client, await message);
+                }
+            }
         }
 
         else {
             await stealGroup(await client, await message);
-            if ( await message.chatId === "5528999670808-1558280621@g.us" ) {
+            if ( await message.chatId === resenhaId ) {
                 await resenhaXP(await message);
             }
         }

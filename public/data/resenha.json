@@ -6,7 +6,7 @@
 	},
 	{
 		"phone": "5512981672239@c.us",
-		"coin": 0,
+		"coin": 1,
 		"antiban": false
 	},
 	{
@@ -16,7 +16,7 @@
 	},
 	{
 		"phone": "5528988038529@c.us",
-		"coin": 0,
+		"coin": 5,
 		"antiban": false
 	},
 	{
@@ -31,7 +31,7 @@
 	},
 	{
 		"phone": "5528998840581@c.us",
-		"coin": 1,
+		"coin": 25.5,
 		"antiban": false
 	},
 	{
@@ -51,12 +51,12 @@
 	},
 	{
 		"phone": "5528999210796@c.us",
-		"coin": 2.75,
+		"coin": 20.25,
 		"antiban": false
 	},
 	{
 		"phone": "5528999223882@c.us",
-		"coin": 9.5,
+		"coin": 36.25,
 		"antiban": false
 	},
 	{
@@ -66,32 +66,32 @@
 	},
 	{
 		"phone": "5528999443183@c.us",
-		"coin": 5,
+		"coin": 8,
 		"antiban": false
 	},
 	{
 		"phone": "5528999475631@c.us",
-		"coin": 7,
+		"coin": 9,
 		"antiban": false
 	},
 	{
 		"phone": "5528999498472@c.us",
-		"coin": 0,
+		"coin": 3,
 		"antiban": false
 	},
 	{
 		"phone": "5528999570939@c.us",
-		"coin": 0,
+		"coin": 1,
 		"antiban": false
 	},
 	{
 		"phone": "5528999670808@c.us",
-		"coin": 0,
+		"coin": 5,
 		"antiban": false
 	},
 	{
 		"phone": "5528999688536@c.us",
-		"coin": 0,
+		"coin": 7.25,
 		"antiban": false
 	},
 	{
@@ -101,6 +101,11 @@
 	},
 	{
 		"phone": "552899223882@c.us",
+		"coin": 0,
+		"antiban": false
+	},
+	{
+		"phone": "5528999969123@c.us",
 		"coin": 0,
 		"antiban": false
 	}

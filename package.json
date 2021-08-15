@@ -15,7 +15,7 @@
     "video-url-link": "^0.1.5",
     "wa-sticker-formatter": "^3.6.0",
     "youtube-stream-url": "^2.0.2",
-    "ytdl-core": "^4.9.0"
+    "ytdl-core": "^4.9.1"
   },
   "devDependencies": {},
   "scripts": {

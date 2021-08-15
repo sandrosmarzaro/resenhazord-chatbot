@@ -5,7 +5,7 @@ module.exports = async function (client, message, command) {
     const fileJson = JSON.parse(fileBuffer);
     let register = fileJson;
 
-    if (command[10] === '0'){
+    if (command[5] === '0'){
         const membersArray = await client.getGroupMembersIds(message.chatId);
         membersArray.forEach(element => {
             register.push({
@@ -14,14 +14,18 @@ module.exports = async function (client, message, command) {
                 "antiban": false
             });
         });
+        await client.sendText(await message.chatId, `Todas as carteiras foram zeradas com sucesso!`);
     }
     else {
-        newResenhista = command(11, command.length) + '@c.us';
+        const newResenhista = (command.substring(6, command.length)) + '@c.us';
         register.push({
             "phone": newResenhista,
             "coin": 0,
             "antiban": false
         });
+        await client.sendMentioned(await message.chatId,
+            `Carteirinha do resenhista @${newResenhista} registrada com sucesso!`,
+            [newResenhista]);
     }
 
     const fileString = JSON.stringify(register, null, '\t');
