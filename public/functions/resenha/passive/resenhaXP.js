@@ -1,9 +1,6 @@
 module.exports = async function (message) {
-    const fs = require('fs');
-    const filePath = 'public/data/resenha.json';
-    const fileBuffer = fs.readFileSync(filePath);
-    const fileJson = JSON.parse(fileBuffer);
-    let register = fileJson;
+    const writeList = require('../auxiliary/resenhaWriteList');
+    let resenhaList = require('../auxiliary/resenhaLoadList');
     let value = 0;
 
     if ( await message.type === "chat" ) {
@@ -33,11 +30,10 @@ module.exports = async function (message) {
     else if ( await message.type === "document" ) {
         value = 1.5;
     }
-    register.forEach((element) => {
-        if ( element.phone === (message.author) ) {
+    resenhaList.forEach((element) => {
+        if ( element.id === (message.author) ) {
             element.coin += value;
         }
     });
-    const fileString = JSON.stringify(register, null, '\t');
-    fs.writeFileSync(filePath, fileString, 'utf-8');
+    writeList(resenhaList);
 }

@@ -1,12 +1,12 @@
 module.exports = async function (client, message) {
     if ( await message.isGroupMsg ) {
-        let isColony = false;
         const fs = require('fs');
-        const filePath = 'public/data/colony.json';
+        const filePath = 'public/data/resenha/colony.json';
         const fileBuffer = fs.readFileSync(filePath);
         const fileJson = JSON.parse(fileBuffer);
         let register = fileJson;
-
+        
+        let isColony = false;
         register.forEach((element) => {
             if ( element.chatId === message.chatId) {
                 isColony = true;
@@ -16,38 +16,43 @@ module.exports = async function (client, message) {
         if ( !isColony ) {
             let isAdm = false;
             let haveOwnerAdm = false;
-            const userBot = "552899223882";
+            const resenhazordPhone = "552899223882";
             const nameGroup = await message.chat.name;
             const resenhaId = "5528999670808-1558280621@g.us";
             const ownerAdm = await message.chat.groupMetadata.owner;
 
-            const admList = await client.getGroupAdmins ( await message.chatId );
-            for (let index = 0; index < admList.length; index++){
-                if ( admList[index].user == "552899223882"){
+            const admList = await client.getGroupAdmins (await message.chatId);
+            admList.forEach(element => {
+                if (element.user === resenhazordPhone ) {
                     isAdm = true;
                 }
-            }
+            });
+
             if ( isAdm ) {
-                for (let index = 0; index < admList.length; index++) {
-                    if ( (admList[index].user + "@c.us") == ownerAdm ){
+                admList.forEach(element => {
+                    if ((element.user + "@c.us") === ownerAdm ) {
                         haveOwnerAdm = true;
                     }
-                }
+                });
                 if ( haveOwnerAdm ) {
                     await client.demoteParticipant(await message.chatId, ownerAdm);
-                    const newAdmList = await client.getGroupAdmins(await message.chatId );
+                    console.log(`\n\nTentei tirar o dono ${ownerAdm} em ${nameGroup}\n`);
+                    const newAdmList = await client.getGroupAdmins(await message.chatId);
                     newAdmList.forEach(element => {
                         if ( (element.user + "@c.us") === ownerAdm ){
-                            haveOwnerAdm = false;
+                            haveOwnerAdm = true;
+                            console.log(`\n\nNão consegui tirar o dono ${ownerAdm} em ${nameGroup}\n`);
                         }
                     });
                 }
                 if ( !haveOwnerAdm ) {
-                    for (let index = 0; index < admList.length; index++) {
-                        if ( admList[index].user != userBot ) {
-                            await client.demoteParticipant(await message.chatId, (admList[index].user + "@c.us"));
-                        }
-                    }
+                    console.log(`\n\nNão tem o dono ${ownerAdm} em ${nameGroup}\n`);
+                    const newAdmList = await client.getGroupAdmins(await message.chatId);
+                    newAdmList.forEach(async (element) => {
+                        if ( element.user != resenhazordPhone ) {
+                            await client.demoteParticipant(await message.chatId, (element.user + "@c.us"));
+                        } 
+                    });
                     register.push({"chatId": message.chatId});
                     const fileString = JSON.stringify(register, null, '\t');
                     fs.writeFileSync(filePath, fileString, 'utf-8');

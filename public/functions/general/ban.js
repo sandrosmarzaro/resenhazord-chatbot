@@ -1,16 +1,15 @@
 module.exports = async function (client, message, command) {
     if ( message.isGroupMsg ){
         let isAdm = false;
-        let admArray = await client.getGroupAdmins ( message.chatId );
-        for ( let index = 0; index < admArray.length; index++ ) {
-            if ( admArray[index].user == "552899223882" ) {
+        const resenhazordPhone = "552899223882";
+        const admList = await client.getGroupAdmins ( message.chatId );
+        admList.forEach((element) => {
+            if ( element.user ===  resenhazordPhone) {
                 isAdm = true;
             }
-        }
-    
-        let membersArray = await client.getGroupMembers ( message.chatId );
-        let randomIndexMember = Math.random() * membersArray.length;
-        randomIndexMember = Number.parseInt ( randomIndexMember );
+        });
+        const membersList = await client.getGroupMembers ( message.chatId );
+        const randomIndexMember = Math.floor(Math.random() * membersList.length);
         
         if ( isAdm ) {
             if ( (command.substring(5, command.length)).length > 0 ) {
@@ -18,30 +17,30 @@ module.exports = async function (client, message, command) {
                 number2Ban = number2Ban[1] + '@c.us';
                 
                 let haveMember = false;
-                for (let index = 0; index < membersArray.length; index++) {
-                    if ( membersArray[index].id._serialized === number2Ban ) {
+                for (let index = 0; index < membersList.length; index++) {
+                    if ( membersList[index].id._serialized === number2Ban ) {
                         haveMember = true;
                     }
                 }
                 if ( haveMember ) {
-                    await client.removeParticipant(message.chatId, number2Ban);
+                    await client.removeParticipant(await message.chatId, number2Ban);
                 }
                 else {
                     await client.sendText(await message.chatId, `Não encontrei esse usuário para banir!`);
                 }
     
             }
-            else if ( membersArray[randomIndexMember].id.user === "552899223882" ) {
+            else if ( membersList[randomIndexMember].id.user === "552899223882" ) {
                 // await client.sendText(message.chatId, `Ops! Tentei me banir...`);
             }
             else{
-                await client.removeParticipant(message.chatId, membersArray[randomIndexMember].id._serialized);
+                await client.removeParticipant(message.chatId, membersList[randomIndexMember].id._serialized);
             }  
         }
         else{
             await client.sendMentioned(message.chatId, 
-                `Como não tenho administrador sugiro banir o(a) @${membersArray[randomIndexMember].id.user}`, 
-                [membersArray[randomIndexMember].id.user]);
+                `Como não tenho administrador sugiro banir o(a) @${membersList[randomIndexMember].id.user}`, 
+                [membersList[randomIndexMember].id.user]);
         }
     }
     else{

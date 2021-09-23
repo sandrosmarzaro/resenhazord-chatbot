@@ -1,5 +1,5 @@
 module.exports = async function (client, chat) {
-    const welcome = require('../scripts/welcome');
+    const welcome = require('../../scripts/welcomeString');
     await client.sendText(await chat.id, welcome).catch(async (err) => {
         console.log(`Welcome error\n`);
         err.forEach(element => {

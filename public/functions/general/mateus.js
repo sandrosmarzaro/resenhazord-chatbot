@@ -1,5 +1,5 @@
 module.exports = async function(client, message) {
-    const swearingString = require('../scripts/swearingString.js');
+    const swearingString = require('../../scripts/swearingString');
     let swearingArray = swearingString.split(",");
     const maxSwearing = swearingArray.length;
     const randomIndex = Number.parseInt(Math.random() * maxSwearing);

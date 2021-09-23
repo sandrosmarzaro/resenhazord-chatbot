@@ -1,6 +1,6 @@
 module.exports = async function (client, message) {
     const fs = require('fs');
-    const filePath = 'public/data/borges.json';
+    const filePath = 'public/data/general/borges.json';
 
     const fileBuffer = fs.readFileSync(filePath, 'utf-8');
     const fileJson = JSON.parse(fileBuffer);
