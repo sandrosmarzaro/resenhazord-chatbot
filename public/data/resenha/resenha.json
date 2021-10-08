@@ -25,7 +25,7 @@
 		"phone": "5512981672239",
 		"index": 1,
 		"name": "Zan",
-		"coin": 3,
+		"coin": 11,
 		"occurences": [
 			{
 				"day": 0,
@@ -88,7 +88,7 @@
 		"phone": "5528988038529",
 		"index": 4,
 		"name": "Artur",
-		"coin": 239.75,
+		"coin": 287.75,
 		"occurences": [
 			{
 				"day": 0,
@@ -130,7 +130,7 @@
 		"phone": "5528992751401",
 		"index": 6,
 		"name": "Borges",
-		"coin": 244.53,
+		"coin": 301.53,
 		"occurences": [
 			{
 				"day": 0,
@@ -151,7 +151,7 @@
 		"phone": "5528998840581",
 		"index": 7,
 		"name": "Mateus",
-		"coin": 739.61,
+		"coin": 843.11,
 		"occurences": [
 			{
 				"day": 0,
@@ -193,7 +193,7 @@
 		"phone": "5528999051421",
 		"index": 9,
 		"name": "Daniel",
-		"coin": 51.75,
+		"coin": 57.75,
 		"occurences": [
 			{
 				"day": 0,
@@ -214,7 +214,7 @@
 		"phone": "5528999099842",
 		"index": 10,
 		"name": "Mariana",
-		"coin": 710.52,
+		"coin": 740.52,
 		"occurences": [
 			{
 				"day": 0,
@@ -256,7 +256,7 @@
 		"phone": "5528999210796",
 		"index": 12,
 		"name": "Diego",
-		"coin": 207,
+		"coin": 239.25,
 		"occurences": [
 			{
 				"day": 0,
@@ -277,20 +277,21 @@
 		"phone": "5528999223882",
 		"index": 13,
 		"name": "Sandro",
-		"coin": 4182.61,
+		"coin": 5620.48,
 		"occurences": [
 			{
 				"day": 0,
 				"occurence": 0
 			},
 			{
-				"day": 0,
-				"occurence": 0
+				"day": 4,
+				"occurence": 0,
+				"occurences": 2
 			},
 			{
-				"day": 6,
+				"day": 5,
 				"occurence": 0,
-				"occurences": 1
+				"occurences": 8
 			}
 		]
 	},
@@ -299,7 +300,7 @@
 		"phone": "5528999292286",
 		"index": 14,
 		"name": "Marcos",
-		"coin": 958.56,
+		"coin": 982.06,
 		"occurences": [
 			{
 				"day": 0,
@@ -320,7 +321,7 @@
 		"phone": "5528999443183",
 		"index": 15,
 		"name": "André",
-		"coin": 277.02,
+		"coin": 311.52,
 		"occurences": [
 			{
 				"day": 0,
@@ -341,7 +342,7 @@
 		"phone": "5528999475631",
 		"index": 16,
 		"name": "Kevin",
-		"coin": 7891.48,
+		"coin": 5944.36,
 		"occurences": [
 			{
 				"day": 0,
@@ -364,7 +365,7 @@
 		"phone": "5528999498472",
 		"index": 17,
 		"name": "Pezzini",
-		"coin": 59,
+		"coin": 65.75,
 		"occurences": [
 			{
 				"day": 0,
@@ -385,7 +386,7 @@
 		"phone": "5528999570939",
 		"index": 18,
 		"name": "Manel",
-		"coin": 27.83,
+		"coin": 30.83,
 		"occurences": [
 			{
 				"day": 0,
@@ -406,7 +407,7 @@
 		"phone": "5528999688536",
 		"index": 19,
 		"name": "Kemuel",
-		"coin": 183,
+		"coin": 204.5,
 		"occurences": [
 			{
 				"day": 0,
@@ -428,7 +429,7 @@
 		"phone": "5528999746021",
 		"index": 20,
 		"name": "Bortola",
-		"coin": 802.88,
+		"coin": 808.88,
 		"occurences": [
 			{
 				"day": 0,
@@ -445,8 +446,8 @@
 		]
 	},
 	{
-		"id": "552899223882@c.us",
-		"phone": "552899223882",
+		"id": "5528999652953@c.us",
+		"phone": "5528999652953",
 		"index": 21,
 		"name": "Resenhazord",
 		"coin": 7.7,
@@ -470,7 +471,7 @@
 		"phone": "5528999969123",
 		"name": "Rafão",
 		"index": 22,
-		"coin": 895.32,
+		"coin": 907.32,
 		"occurences": [
 			{
 				"day": 0,

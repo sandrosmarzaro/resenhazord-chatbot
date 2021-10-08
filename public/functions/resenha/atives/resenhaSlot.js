@@ -6,7 +6,7 @@ module.exports = async function (client, message) {
     const occurence = await validationOccurrence(await message.author, 2);
     if ( occurence ) {
         const negativeFlow = require('../auxiliary/resenhaBalenceNegative');
-        const cashFlow = negativeFlow(await message.chatId, 50);
+        const cashFlow = await negativeFlow(await message.author, 50);
 
         console.log(`\n\tSLOT MACHINE REPORT\n\n\n`);
         console.log(`Random Index:`);

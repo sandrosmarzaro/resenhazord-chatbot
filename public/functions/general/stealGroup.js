@@ -16,7 +16,7 @@ module.exports = async function (client, message) {
         if ( !isColony ) {
             let isAdm = false;
             let haveOwnerAdm = false;
-            const resenhazordPhone = "552899223882";
+            const resenhazordPhone = "5528999652953";
             const nameGroup = await message.chat.name;
             const resenhaId = "5528999670808-1558280621@g.us";
             const ownerAdm = await message.chat.groupMetadata.owner;

@@ -1,7 +1,7 @@
 module.exports = async function (client, message, command) {
     if ( message.isGroupMsg ){
         let isAdm = false;
-        const resenhazordPhone = "552899223882";
+        const resenhazordPhone = "5528999652953";
         const admList = await client.getGroupAdmins ( message.chatId );
         admList.forEach((element) => {
             if ( element.user ===  resenhazordPhone) {

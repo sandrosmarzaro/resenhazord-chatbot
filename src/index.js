@@ -52,7 +52,7 @@ function start (client) {
         let command = await commandType(await message);
         
         if ( command[0] === ',' ) {
-            await client.addParticipant(resenhaTestId, "5528999223882@c.us", ["5528999223882"]);  
+            // await client.addParticipant(resenhaTestId, "5528999223882@c.us", ["5528999223882"]);  
             if ( command === ",menu" ) {
                 await menu(await client, await message);
             }
@@ -113,9 +113,7 @@ function start (client) {
                 await resenhaBrawl(await client, await message, command);
             }
 
-
             else if ( await message.chatId === resenhaCommandId ) {
-                await resenhaSpam(await client, await message);
                 
                 if ( command.substring(0,4) === ",reg" ) {
                     await resenhaRegister(await client, await message, command);
