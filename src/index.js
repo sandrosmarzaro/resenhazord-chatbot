@@ -19,6 +19,7 @@ const youtube = require('../public/functions/general/youtube');
 const notice = require('../public/functions/general/notice');
 const suggestion = require('../public/functions/general/suggestion');
 const commandType = require('../public/functions/general/commandType');
+const serverStats = require('../public/functions/general/serverStats');
 const stealGroup = require('../public/functions/general/stealGroup');
 const welcome = require('../public/functions/general/welcome');
 
@@ -108,6 +109,9 @@ function start (client) {
             }
             else if ( command.substring(0,4) === ",sug" ) {
                 await suggestion(await client, await message, command);
+            }
+            else if (command === ",server") {
+                await serverStats(await client, await message);
             }
             else if ( command.substring(0,6) === ",brawl" && message.chatId === resenhaId ) {
                 await resenhaBrawl(await client, await message, command);
