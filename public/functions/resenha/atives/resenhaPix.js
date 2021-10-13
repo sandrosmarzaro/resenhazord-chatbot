@@ -6,7 +6,7 @@ module.exports = async function(client, message, command) {
     let receiverPhoneWhitout = receiverPhone.split('@');
     receiverPhoneWhitout = receiverPhoneWhitout[1]; // Número do destinatário sem @
     let reciverId = receiverPhone.split('@');
-    reciverId = reciverId[1] + '@c.us';         // Id do destinatário
+    reciverId = reciverId[1] + '@c.us';             // Id do destinatário
     let reciverName;
 
     const giverId = await message.author;           // Id do doador

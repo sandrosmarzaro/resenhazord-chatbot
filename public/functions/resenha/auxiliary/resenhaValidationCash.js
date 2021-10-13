@@ -1,4 +1,4 @@
-module.exports = function(client, message, cash, phone) {
+module.exports = async function(client, message, cash, phone) {
     let validation = false;
     let invalidFormat = false;
 
