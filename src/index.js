@@ -22,6 +22,7 @@ const commandType = require('../public/functions/general/commandType');
 const serverStats = require('../public/functions/general/serverStats');
 const stealGroup = require('../public/functions/general/stealGroup');
 const welcome = require('../public/functions/general/welcome');
+const commandNotFound = require('../public/functions/general/commandNotFound');
 
 // const resenhaDrive = require('../public/functions/resenha/atives/resenhaDrive');
 const resenhaMenu = require('../public/scripts/resenhaMenu');
@@ -50,10 +51,9 @@ function start (client) {
         const resenhaId = "5528999670808-1558280621@g.us";
         const resenhaCommandId = "5528999223882-1631568648@g.us";
         const resenhaTestId = "5528999219566-1612381013@g.us";
-        let command = await commandType(await message);
+        const command = await commandType(await message);
         
         if ( command[0] === ',' ) {
-            // await client.addParticipant(resenhaTestId, "5528999223882@c.us", ["5528999223882"]);  
             if ( command === ",menu" ) {
                 await menu(await client, await message);
             }
@@ -118,7 +118,6 @@ function start (client) {
             }
 
             else if ( await message.chatId === resenhaCommandId ) {
-                
                 if ( command.substring(0,4) === ",reg" ) {
                     await resenhaRegister(await client, await message, command);
                 }
@@ -146,8 +145,11 @@ function start (client) {
                     `Função em desenvolvimento precoce insolente...`);
                 }
             }
+            else {
+                await commandNotFound(client, message);
+            }
         }
-        else {
+        else {  
             if ( await message.chatId === resenhaId ) {
                 await resenhaXP(await message);
             }
