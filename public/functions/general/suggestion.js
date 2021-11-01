@@ -9,11 +9,13 @@ module.exports = async function (client, message, command) {
     }
 
     const sugestionText = command.substring(6, command.length);
-    sugestion = new Sugestion(await message.sender.pushname,
-                            await message.author,
-                            await message.chat.name,
-                            await message.chatId,
-                            sugestionText);
+    sugestion = new Sugestion(
+        await message.sender.pushname,
+        await message.author,
+        await message.chat.name,
+        await message.chatId,
+        sugestionText
+    );
 
     const fs = require('fs');
     const filePath = "public/data/sugestion.json";

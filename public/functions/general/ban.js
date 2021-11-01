@@ -2,13 +2,13 @@ module.exports = async function (client, message, command) {
     if ( message.isGroupMsg ){
         let isAdm = false;
         const resenhazordPhone = "5528999652953";
-        const admList = await client.getGroupAdmins ( message.chatId );
+        const admList = await client.getGroupAdmins (message.chatId);
         admList.forEach((element) => {
             if ( element.user ===  resenhazordPhone) {
                 isAdm = true;
             }
         });
-        const membersList = await client.getGroupMembers ( message.chatId );
+        const membersList = await client.getGroupMembers (message.chatId);
         const randomIndexMember = Math.floor(Math.random() * membersList.length);
         
         if ( isAdm ) {
@@ -26,7 +26,11 @@ module.exports = async function (client, message, command) {
                     await client.removeParticipant(await message.chatId, number2Ban);
                 }
                 else {
-                    await client.sendText(await message.chatId, `Não encontrei esse usuário para banir!`);
+                    await client.reply(
+                        await message.chatId, 
+                        `Não encontrei esse usuário para banir!`,
+                        await message.id
+                    );
                 }
     
             }
@@ -34,16 +38,25 @@ module.exports = async function (client, message, command) {
                 // await client.sendText(message.chatId, `Ops! Tentei me banir...`);
             }
             else{
-                await client.removeParticipant(message.chatId, membersList[randomIndexMember].id._serialized);
+                await client.removeParticipant(
+                    message.chatId, 
+                    membersList[randomIndexMember].id._serialized
+                );
             }  
         }
         else{
-            await client.sendMentioned(message.chatId, 
+            await client.sendMentioned(
+                await message.chatId, 
                 `Como não tenho administrador sugiro banir o(a) @${membersList[randomIndexMember].id.user}`, 
-                [membersList[randomIndexMember].id.user]);
+                [membersList[randomIndexMember].id.user]
+            );
         }
     }
     else{
-        await client.sendText(message.chatId, `Aqui é uma conversa privada, não consigo banir ninguém!`);
+        await client.reply(
+            await message.chatId, 
+            `Aqui é uma conversa privada, não consigo banir ninguém!`,
+            await message.id
+        );
     }
 }

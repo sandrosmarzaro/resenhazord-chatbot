@@ -5,5 +5,9 @@ module.exports = async function (client, message) {
     numberRandom = Math.random() * maxNumber;
     numberRandom = numberRandom.toFixed(2);
     numberRandom = numberRandom.replace('.', ',');
-    await client.sendText(message.chatId, `A chance de Mangos II nascer agora é ${numberRandom} %`);
+    await client.reply(
+        await message.chatId, 
+        `A chance de Mangos II nascer agora é ${numberRandom} %`,
+        await message.id
+    );
 }
