@@ -1,0 +1,8 @@
+# Files
+cookie.json
+
+#Directories
+node_modules/
+tokens/
+public/images/*
+.vscode/
