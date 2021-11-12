@@ -10,22 +10,25 @@ module.exports = async function (client, message, command) {
             let linkMp4;
             let birateBigger;
             let firstMp4 = 0;
-
-            for (let index = 0; index < info.variants.length; index++) {
-
-                if ( firstMp4 === 0 && info.variants[index]['content_type'] === "video/mp4") {
-
+            info.variants.forEach((element) => {
+                let contenType = element.content_type;
+                let turnbirate = element.bitrate;
+                if ( (firstMp4 === 0) && (contenType === "video/mp4")) {
                     firstMp4++;
-                    birateBigger = info.variants[index]['bitrate'];
-                    linkMp4 = info.variants[index]['url'];
+                    birateBigger = turnbirate;
+                    linkMp4 = element.url;
                 }
-                else if (info.variants[index]['bitrate'] > birateBigger && info.variants[index]['content_type'] === "video/mp4") {
-
-                    birateBigger = info.variants[index]['bitrate'];
-                    linkMp4 = info.variants[index]['url'];
+                else if (turnbirate > birateBigger && contenType === "video/mp4") {
+                    birateBigger = element.bitrate;
+                    linkMp4 = element.url;
                 }
-            }
-            await client.sendFile(message.chatId, linkMp4, `Twitter Video`, `${info.full_text}`);
+            });
+            await client.sendFile(
+                message.chatId, 
+                linkMp4, 
+                `Twitter Video`, 
+                `${info.full_text}`
+            );
         }
     });
 }

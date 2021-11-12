@@ -16,7 +16,12 @@ module.exports = async function (client, message) {
             
             return imgList;
         });
-        await client.sendImage(message.chatId, rule34[0]['src'], "rule34", "Aqui está sua imagem aleatória!");
+        await client.sendImage(
+            message.chatId, 
+            rule34[0]['src'], 
+            "rule34", 
+            "Aqui está sua imagem aleatória!"
+        );
         await browser.close();
     })();
 }

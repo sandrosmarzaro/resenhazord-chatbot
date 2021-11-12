@@ -15,9 +15,16 @@ module.exports = async function (client, message, command) {
             let contact = '@' + String(user) + ' ';
             contacts += contact;
         }
-        await client.sendMentioned(message.chatId, `${command.substring(5, command.length)} ${contacts}`, users);
+        await client.sendMentioned(
+            message.chatId, 
+            `${command.substring(5, command.length)} ${contacts}`, 
+            users
+        );
     }
     else {
-        await client.sendText(message.chatId, `Aqui é uma conversa privada, não consigo marcar ninguém!`);
+        await client.sendText(
+            message.chatId, 
+            `Aqui é uma conversa privada, não consigo marcar ninguém!`
+            );
     }
 }

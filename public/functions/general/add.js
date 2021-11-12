@@ -32,7 +32,7 @@ module.exports = async function (client, message, command){
                 else {
                     const insertDDi = insertPhone.substring(0, 2);
                     ddiList.forEach(element => {
-                        if ( element == insertDDi) {
+                        if (element == insertDDi) {
                             correctDDi = true;
                         }
                     });
@@ -46,8 +46,10 @@ module.exports = async function (client, message, command){
                         added = await client.addParticipant(await message.chatId, 
                         randomPhoneId, [randomPhone]);
                         if ( added ) {
-                            await client.sendText(await message.chatId,
-                            `Depois de ${count} números gerados, achei esse:`);
+                            await client.sendText(
+                                await message.chatId,
+                                `Depois de ${count} números gerados, achei esse:`
+                            );
                             randomPhone = "55";
                         } 
                     }
@@ -59,14 +61,18 @@ module.exports = async function (client, message, command){
                 }                                                       
             }
             else {
-                await client.sendText(message.chatId, 
-                `Não tenho administrador para adicionar alguém!`);
+                await client.sendText(
+                    message.chatId, 
+                    `Não tenho administrador para adicionar alguém!`
+                );
                 added = 1;
             }
         } while ( !added );
     }
     else {
-        await client.sendText(message.chatId, 
-        `Aqui é uma conversa privada, não consigo adicionar ninguém!`);
+        await client.sendText(
+            message.chatId, 
+            `Aqui é uma conversa privada, não consigo adicionar ninguém!`
+        );
     }
 }
