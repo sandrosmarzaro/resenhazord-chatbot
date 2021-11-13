@@ -1,71 +1,56 @@
 module.exports = async function (client, message, command){
-    const fs = require('fs');
-    const mime = require('mime-types');
-    const WSF = require('wa-sticker-formatter');
+    const { Sticker, StickerTypes } = require('wa-sticker-formatter');
+    console.log(message);
     
     let bufferMessage;
-    let mimetypeMessage;
-    if ( message.type === "chat" ) {
-        bufferMessage = message.quotedMsg;
-        mimetypeMessage = message.quotedMsg.mimetype;
+    if (await message.type === "chat") {
+        bufferMessage = await message.quotedMsgObj;
+        mimetypeMessage = await message.quotedMsgObj.mimetype;
     }
     else {
-        bufferMessage = message;
-        mimetypeMessage = message.mimetype;
+        bufferMessage = await message;
+        mimetypeMessage = await message.mimetype;
     }
-    const buffer = await client.decryptFile(bufferMessage);
-    const fileName = `public/images/sticker.${mime.extension(mimetypeMessage)}`;
-    fs.writeFile(fileName, buffer, async (err) => {
-        
-        const typeMedia = await mimetypeMessage.split('/');
-        const image = fs.readFileSync('./' + fileName);
-        let sticker;
+    const bufferMedia = await client.decryptFile(bufferMessage);
+    const typeMedia = mimetypeMessage.split('/');
+    let isStickerAnimeted = false;
+    if (typeMedia[0] === "video") isStickerAnimeted = true;
 
-        if ( typeMedia[0] === "video" ) {
-            
-            command === ",sticrop" ? 
-            stickerGif = new WSF.Sticker(image, { 
-                crop: true, 
-                animated: true, 
-                pack: 'Resenha Pack', 
-                author: 'REZENHAZORD' 
-            }) 
-            : stickerGif = new WSF.Sticker(image, { 
-                crop: false,  
-                animated: true, 
-                pack: 'Resenha Pack', 
-                author: 'REZENHAZORD' });
-
-            await stickerGif.build();
-            const sticGifBuffer = await stickerGif.get();
-            const pathGifSticker = "public/images/sticker.gif";
-
-            fs.writeFile(pathGifSticker, sticGifBuffer, async (err) =>{
-                await client.sendImageAsStickerGif(message.chatId, pathGifSticker);
-            });
+    let typeSticker;
+    let backgroundColor = '';
+    if (command === ',stic') {
+        typeSticker = StickerTypes.FULL;
+        backgroundColor = {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "alpha": 0
         }
+    }
+    else if (command === ',sticc') typeSticker = StickerTypes.CROPPED;
+    const sticker = new Sticker(bufferMedia, {
+        pack: 'Resenha Pack',
+        author: 'Resenhazord',
+        type: typeSticker,
+        categories: [],
+        id: '',
+        quality: 100,
+        background: backgroundColor
+    })
 
-        else if ( typeMedia[0] === "image" ) {
-
-            command === ",sticrop" ? 
-            sticker = new WSF.Sticker(image, { 
-                crop: true, 
-                animated: false, 
-                pack: 'Resenha Pack', 
-                author: 'REZENHAZORD' }) 
-            : sticker = new WSF.Sticker(image, { 
-                crop: false,  
-                animated: false, 
-                pack: 'Resenha Pack', 
-                author: 'REZENHAZORD' });
-
-            await sticker.build();
-            const sticBuffer = await sticker.get();
-            const pathSticker = "public/images/sticker.webp";
-
-            fs.writeFile(pathSticker, sticBuffer, async (err) =>{
-                await client.sendImageAsSticker(message.chatId, pathSticker);
-            });
-        }                
-    });
+    const path = require('path');
+    if (isStickerAnimeted) {
+        const fs = require('fs');
+        const filePath = path.join('public', 'images', 'sticker.gif');
+        const bufferSticker = await sticker.toBuffer();
+        fs.writeFile(filePath, bufferSticker, async (err) => {
+            await client.sendImageAsStickerGif(await message.chatId, filePath);
+        });
+    }    
+    else {
+        const filePath = path.join('public', 'images', 'sticker.webp');
+        await sticker.toFile(filePath);
+        await client.sendImageAsSticker(await message.chatId, filePath);
+    }
+    
 }

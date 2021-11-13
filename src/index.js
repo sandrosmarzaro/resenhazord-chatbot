@@ -38,7 +38,7 @@ const resenhaSpam = require('../public/functions/resenha/passive/resenhaSpam');
 
 venom.create(
     'Resenhazord',
-    (base64Qrimg, asciiQR, attempts, urlCode) => {}, (statusSession, session) => {}, {useChrome: true,}
+    (base64Qrimg, asciiQR, attempts, urlCode) => {}, (statusSession, session) => {}, {useChrome: false,}
 ).then((client) => start(client));
 
 function start (client) {
@@ -86,7 +86,7 @@ function start (client) {
                 await client.sendText(await message.chatId, 
                 `Função em desenvolvimento precoce insolente...`);
             }
-            else if ( command === ",stic" || command === ",sticrop" ){  
+            else if ( command === ",stic" || command === ",sticc" ){  
                 await sticker(await client, await message, command);
             }
             else if ( command.substring(0, 4) === ",tts" ) {

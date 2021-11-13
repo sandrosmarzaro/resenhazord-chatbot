@@ -88,7 +88,7 @@
 		"phone": "5528988038529",
 		"index": 4,
 		"name": "Artur",
-		"coin": 1889.75,
+		"coin": 1903.75,
 		"occurences": [
 			{
 				"day": 0,
@@ -109,7 +109,7 @@
 		"phone": "5528992738668",
 		"index": 5,
 		"name": "Dhonata",
-		"coin": 1007.25,
+		"coin": 1009.25,
 		"occurences": [
 			{
 				"day": 0,
@@ -130,7 +130,7 @@
 		"phone": "5528992751401",
 		"index": 6,
 		"name": "Borges",
-		"coin": 916.53,
+		"coin": 934.78,
 		"occurences": [
 			{
 				"day": 0,
@@ -151,7 +151,7 @@
 		"phone": "5528998840581",
 		"index": 7,
 		"name": "Mateus",
-		"coin": 3034.86,
+		"coin": 3111.61,
 		"occurences": [
 			{
 				"day": 0,
@@ -214,7 +214,7 @@
 		"phone": "5528999099842",
 		"index": 10,
 		"name": "Mariana",
-		"coin": 1077.77,
+		"coin": 1079.77,
 		"occurences": [
 			{
 				"day": 0,
@@ -256,7 +256,7 @@
 		"phone": "5528999210796",
 		"index": 12,
 		"name": "Diego",
-		"coin": 668.25,
+		"coin": 678.5,
 		"occurences": [
 			{
 				"day": 0,
@@ -277,7 +277,7 @@
 		"phone": "5528999223882",
 		"index": 13,
 		"name": "Sandro",
-		"coin": 2916.8,
+		"coin": 2945.3,
 		"occurences": [
 			{
 				"day": 5,
@@ -301,7 +301,7 @@
 		"phone": "5528999292286",
 		"index": 14,
 		"name": "Marcos",
-		"coin": 1194.56,
+		"coin": 1195.81,
 		"occurences": [
 			{
 				"day": 0,
@@ -322,7 +322,7 @@
 		"phone": "5528999443183",
 		"index": 15,
 		"name": "André",
-		"coin": 906.77,
+		"coin": 930.02,
 		"occurences": [
 			{
 				"day": 0,
@@ -343,7 +343,7 @@
 		"phone": "5528999475631",
 		"index": 16,
 		"name": "Kevin",
-		"coin": 4372.54,
+		"coin": 4193.04,
 		"occurences": [
 			{
 				"day": 0,
@@ -355,9 +355,9 @@
 				"occurences": 7
 			},
 			{
-				"day": 6,
+				"day": 5,
 				"occurence": 0,
-				"occurences": 8
+				"occurences": 5
 			}
 		]
 	},
@@ -408,7 +408,7 @@
 		"phone": "5528999688536",
 		"index": 19,
 		"name": "Kemuel",
-		"coin": 2142.5,
+		"coin": 2153.5,
 		"occurences": [
 			{
 				"day": 0,
@@ -430,7 +430,7 @@
 		"phone": "5528999746021",
 		"index": 20,
 		"name": "Bortola",
-		"coin": 907.13,
+		"coin": 909.13,
 		"occurences": [
 			{
 				"day": 0,
@@ -472,7 +472,7 @@
 		"phone": "5528999969123",
 		"name": "Rafão",
 		"index": 22,
-		"coin": 1807.5700000000002,
+		"coin": 1825.0700000000002,
 		"occurences": [
 			{
 				"day": 0,
@@ -493,7 +493,7 @@
 		"phone": "5528999670808",
 		"index": -1,
 		"name": "Alexandre",
-		"coin": 1850.25,
+		"coin": 1854.25,
 		"occurences": [
 			{
 				"day": 0,
