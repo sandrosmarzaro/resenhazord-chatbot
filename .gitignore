@@ -1,9 +1,9 @@
-# Files
-cookie.json
-!public/images/.gitkeep
-
 #Directories
 node_modules/
 tokens/
 public/images/*
 .vscode/
+
+# Files
+cookie.json
+!/public/images/.gitkeep
