@@ -1,7 +1,5 @@
 module.exports = async function (client, message, command){
     const { Sticker, StickerTypes } = require('wa-sticker-formatter');
-    console.log(message);
-    
     let bufferMessage;
     if (await message.type === "chat") {
         bufferMessage = await message.quotedMsgObj;
