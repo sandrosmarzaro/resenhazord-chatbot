@@ -12,7 +12,7 @@
     "puppeteer": "^11.0.0",
     "sharp": "^0.29.3",
     "sinon-stories": "^1.0.3",
-    "venom-bot": "^4.0.1",
+    "venom-bot": "^4.0.2",
     "video-url-link": "^0.1.5",
     "wa-sticker-formatter": "^4.1.2",
     "ytdl-core": "^4.9.1"
