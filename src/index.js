@@ -9,7 +9,7 @@ const all = require('../public/functions/general/all');
 const ban = require('../public/functions/general/ban');
 const add = require('../public/functions/general/add');
 const img = require('../public/functions/general/img');
-const porn = require('../public/functions/general/pornhub');
+// const porn = require('../public/functions/general/pornhub');
 const sticker = require('../public/functions/general/sticker');
 const tts = require('../public/functions/general/tts');
 const instagram = require('../public/functions/general/instagram');
@@ -38,7 +38,62 @@ const resenhaSpam = require('../public/functions/resenha/passive/resenhaSpam');
 
 venom.create(
     'Resenhazord',
-    (base64Qrimg, asciiQR, attempts, urlCode) => {}, (statusSession, session) => {}, {useChrome: false,}
+    (base64Qrimg, asciiQR, attempts, urlCode) => {}, (statusSession, session) => {}, {
+        useChrome: false, 
+        browserArgs: [ 
+            '--log-level=3',
+            '--no-default-browser-check',
+            '--disable-site-isolation-trials',
+            '--no-experiments',
+            '--ignore-gpu-blacklist',
+            '--ignore-certificate-errors',
+            '--ignore-certificate-errors-spki-list',
+            '--disable-gpu',
+            '--disable-extensions',
+            '--disable-default-apps',
+            '--enable-features=NetworkService',
+            '--disable-setuid-sandbox',
+            '--no-sandbox',
+            '--disable-webgl',
+            '--disable-infobars',
+            '--window-position=0,0',
+            '--ignore-certifcate-errors',
+            '--ignore-certifcate-errors-spki-list',
+            '--ignore-ssl-errors',
+            '--disable-threaded-animation',
+            '--disable-threaded-scrolling',
+            '--disable-in-process-stack-traces',
+            '--disable-histogram-customizer',
+            '--disable-gl-extensions',
+            '--disable-composited-antialiasing',
+            '--disable-canvas-aa',
+            '--disable-3d-apis',
+            '--disable-accelerated-2d-canvas',
+            '--disable-accelerated-jpeg-decoding',
+            '--disable-accelerated-mjpeg-decode',
+            '--disable-app-list-dismiss-on-blur',
+            '--disable-accelerated-video-decode',
+            '--single-process',
+            '--disable-dev-shm-usage',
+            '--disable-gl-drawing-for-tests',
+            '--incognito',
+            '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36',
+            '--aggressive-cache-discard',
+            '--disable-cache',
+            '--disable-application-cache',
+            '--disable-offline-load-stale-cache',
+            '--disk-cache-size=0',
+            '--disable-background-networking',
+            '--disable-sync',
+            '--disable-translate',
+            '--hide-scrollbars',
+            '--metrics-recording-only',
+            '--mute-audio',
+            '--no-first-run',
+            '--safebrowsing-disable-auto-update',
+            '--disable-notifications'
+        ]
+    }
 ).then((client) => start(client));
 
 function start (client) {
