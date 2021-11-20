@@ -30,7 +30,7 @@ module.exports = async function (client, message, command) {
                 await message.chatId, 
                 linkMp4, 
                 `Twitter Video`, 
-                `${infoVariants.full_text}`
+                `${await info.full_text}`
             );
         }
     });

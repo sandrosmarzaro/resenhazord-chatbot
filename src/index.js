@@ -39,7 +39,7 @@ const resenhaSpam = require('../public/functions/resenha/passive/resenhaSpam');
 venom.create(
     'Resenhazord',
     (base64Qrimg, asciiQR, attempts, urlCode) => {}, (statusSession, session) => {}, {
-        useChrome: false, 
+        useChrome: true, 
         browserArgs: [ 
             '--log-level=3',
             '--no-default-browser-check',
@@ -96,7 +96,7 @@ venom.create(
     }
 ).then((client) => start(client));
 
-function start (client) {
+function start(client) {
 
     client.onAddedToGroup(async (chat) => {
         await welcome(await client, await chat);
