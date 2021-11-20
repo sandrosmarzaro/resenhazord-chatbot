@@ -16,9 +16,7 @@ module.exports = async function (client, message, command){
         
         admList = await client.getGroupAdmins(message.chatId);
         admList.forEach(element => {
-            if ( element.user === resenhazordPhone ) {
-                isAdm = true;
-            }
+            if ( element.user === resenhazordPhone ) isAdm = true;
         });
         let count = 0;
         do {
@@ -26,37 +24,41 @@ module.exports = async function (client, message, command){
             if ( isAdm ) {         
                 if ( insertPhone === 0 ) {
                     added = true;
-                    await client.sendText(message.chatId, 
-                    "Número não inserido! Não consigo adiconar sem ele.");
+                    await client.sendText(
+                        message.chatId, 
+                        "Número não inserido! Não consigo adiconar sem ele."
+                    );
                 }
                 else {
                     const insertDDi = insertPhone.substring(0, 2);
                     ddiList.forEach(element => {
-                        if (element == insertDDi) {
-                            correctDDi = true;
-                        }
+                        if (element == insertDDi) correctDDi = true;
                     });
                     if ( correctDDi ) {
                         randomPhone += insertPhone;
-                        for (let index = insertPhone.length; index  < 11; index++) {
+                        for (let index = randomPhone.length; index  < 13; index++) {
                             randomNumber = Math.floor(Math.random() * 10);
                             randomPhone += randomNumber;
                         }
                         randomPhoneId = randomPhone + "@c.us";
-                        added = await client.addParticipant(await message.chatId, 
-                        randomPhoneId, [randomPhone]);
+                        added = await client.addParticipant(
+                            await message.chatId, 
+                            randomPhoneId, [randomPhone]
+                        ).catch(err => { });
                         if ( added ) {
                             await client.sendText(
                                 await message.chatId,
                                 `Depois de ${count} números gerados, achei esse:`
                             );
-                            randomPhone = "55";
                         } 
+                        else randomPhone = "55";
                     }
                     else {
                         added = true;
-                        await client.sendText(message.chatId, 
-                        "DDi inserido não existe no Brasil! Não consegui adiconar o número.");
+                        await client.sendText(
+                            message.chatId, 
+                            "DDi inserido não existe no Brasil! Não consegui adiconar o número."
+                        );
                     }
                 }                                                       
             }
