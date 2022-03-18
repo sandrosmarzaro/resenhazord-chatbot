@@ -9,13 +9,13 @@
     "google-api-wrapper": "^1.12.0",
     "google-tts-api": "^2.0.2",
     "instagram-url-direct": "^1.0.9",
-    "puppeteer": "^11.0.0",
+    "puppeteer": "^13.5.1",
     "sharp": "^0.29.3",
     "sinon-stories": "^1.0.3",
-    "venom-bot": "^4.0.2",
+    "venom-bot": "^4.0.9",
     "video-url-link": "^0.1.5",
-    "wa-sticker-formatter": "^4.2.0",
-    "ytdl-core": "^4.9.1"
+    "wa-sticker-formatter": "^4.3.2",
+    "ytdl-core": "^4.11.0"
   },
   "scripts": {
     "start": "node --trace-warnings src/index.js"

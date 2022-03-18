@@ -25,7 +25,7 @@
 		"phone": "5512981672239",
 		"index": 1,
 		"name": "Zan",
-		"coin": 68,
+		"coin": 72,
 		"occurences": [
 			{
 				"day": 0,
@@ -88,7 +88,7 @@
 		"phone": "5528988038529",
 		"index": 4,
 		"name": "Artur",
-		"coin": 1947.25,
+		"coin": 2062.75,
 		"occurences": [
 			{
 				"day": 0,
@@ -109,7 +109,7 @@
 		"phone": "5528992738668",
 		"index": 5,
 		"name": "Dhonata",
-		"coin": 1009.25,
+		"coin": 1014.5,
 		"occurences": [
 			{
 				"day": 0,
@@ -130,7 +130,7 @@
 		"phone": "5528992751401",
 		"index": 6,
 		"name": "Borges",
-		"coin": 939.78,
+		"coin": 1108.03,
 		"occurences": [
 			{
 				"day": 0,
@@ -151,7 +151,7 @@
 		"phone": "5528998840581",
 		"index": 7,
 		"name": "Mateus",
-		"coin": 3185.86,
+		"coin": 3934.11,
 		"occurences": [
 			{
 				"day": 0,
@@ -172,7 +172,7 @@
 		"phone": "5528998867054",
 		"index": 8,
 		"name": "Thiago",
-		"coin": 11.5,
+		"coin": 21,
 		"occurences": [
 			{
 				"day": 0,
@@ -193,7 +193,7 @@
 		"phone": "5528999051421",
 		"index": 9,
 		"name": "Daniel",
-		"coin": 117.25,
+		"coin": 145.5,
 		"occurences": [
 			{
 				"day": 0,
@@ -214,7 +214,7 @@
 		"phone": "5528999099842",
 		"index": 10,
 		"name": "Mariana",
-		"coin": 1090.77,
+		"coin": 1128.27,
 		"occurences": [
 			{
 				"day": 0,
@@ -256,7 +256,7 @@
 		"phone": "5528999210796",
 		"index": 12,
 		"name": "Diego",
-		"coin": 729.75,
+		"coin": 846.75,
 		"occurences": [
 			{
 				"day": 0,
@@ -277,7 +277,7 @@
 		"phone": "5528999223882",
 		"index": 13,
 		"name": "Sandro",
-		"coin": 2994.55,
+		"coin": 3242.05,
 		"occurences": [
 			{
 				"day": 5,
@@ -301,7 +301,7 @@
 		"phone": "5528999292286",
 		"index": 14,
 		"name": "Marcos",
-		"coin": 1206.56,
+		"coin": 1278.31,
 		"occurences": [
 			{
 				"day": 0,
@@ -322,7 +322,7 @@
 		"phone": "5528999443183",
 		"index": 15,
 		"name": "André",
-		"coin": 951.77,
+		"coin": 1185.02,
 		"occurences": [
 			{
 				"day": 0,
@@ -343,7 +343,7 @@
 		"phone": "5528999475631",
 		"index": 16,
 		"name": "Kevin",
-		"coin": 4313.54,
+		"coin": 4662.04,
 		"occurences": [
 			{
 				"day": 0,
@@ -366,7 +366,7 @@
 		"phone": "5528999498472",
 		"index": 17,
 		"name": "Pezzini",
-		"coin": 230,
+		"coin": 304.75,
 		"occurences": [
 			{
 				"day": 0,
@@ -408,7 +408,7 @@
 		"phone": "5528999688536",
 		"index": 19,
 		"name": "Kemuel",
-		"coin": 2204,
+		"coin": 2402,
 		"occurences": [
 			{
 				"day": 0,
@@ -430,7 +430,7 @@
 		"phone": "5528999746021",
 		"index": 20,
 		"name": "Bortola",
-		"coin": 909.13,
+		"coin": 918.13,
 		"occurences": [
 			{
 				"day": 0,
@@ -472,7 +472,7 @@
 		"phone": "5528999969123",
 		"name": "Rafão",
 		"index": 22,
-		"coin": 1993.5700000000002,
+		"coin": 2493.57,
 		"occurences": [
 			{
 				"day": 0,
@@ -491,9 +491,177 @@
 	{
 		"id": "5528999670808@c.us",
 		"phone": "5528999670808",
-		"index": -1,
+		"index": 23,
 		"name": "Alexandre",
-		"coin": 1893.25,
+		"coin": 2259.75,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528992981473@c.us",
+		"phone": "5528992981473",
+		"index": 24,
+		"name": "Gabrijhow",
+		"coin": 2.25,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528999295771@c.us",
+		"phone": "5528999295771",
+		"index": 25,
+		"name": "Guilherme",
+		"coin": 0,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5527999236797@c.us",
+		"phone": "5527999236797",
+		"index": 26,
+		"name": "Valeriano",
+		"coin": 0,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528999773348@c.us",
+		"phone": "5528999773348",
+		"index": 27,
+		"name": "Livia",
+		"coin": 0,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528999513115@c.us",
+		"phone": "5528999513115",
+		"index": 28,
+		"name": "Gean",
+		"coin": 2,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528999149152@c.us",
+		"phone": "5528999149152",
+		"index": 29,
+		"name": "Mr Pussy",
+		"coin": 0,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528999292778@c.us",
+		"phone": "5528999292778",
+		"index": 30,
+		"name": "Leandro",
+		"coin": 1.25,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528999099842@c.us",
+		"phone": "5528999099842",
+		"index": 31,
+		"name": "Mariana",
+		"coin": 0,
 		"occurences": [
 			{
 				"day": 0,

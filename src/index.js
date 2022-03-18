@@ -39,6 +39,8 @@ const resenhaSpam = require('../public/functions/resenha/passive/resenhaSpam');
 venom.create(
     'Resenhazord',
     (base64Qrimg, asciiQR, attempts, urlCode) => {}, (statusSession, session) => {}, {
+        disableWelcome: true,
+        multidevice: true,
         useChrome: true, 
         browserArgs: [ 
             '--log-level=3',
@@ -171,12 +173,12 @@ function start(client) {
             else if ( command.substring(0,6) === ",brawl" && message.chatId === resenhaId ) {
                 await resenhaBrawl(await client, await message, command);
             }
+            else if ( command.substring(0,4) === ",reg" ) {
+                await resenhaRegister(await client, await message, command);
+            }
 
             else if ( await message.chatId === resenhaCommandId ) {
-                if ( command.substring(0,4) === ",reg" ) {
-                    await resenhaRegister(await client, await message, command);
-                }
-                else if (command === ",menur" ) {
+                if (command === ",menur" ) {
                     await client.sendText(message.chatId, resenhaMenu);
                 }
                 else if ( command.substring(0,5) === ",coin" ) {
