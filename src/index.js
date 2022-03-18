@@ -31,6 +31,7 @@ const resenhaRegister = require('../public/functions/resenha/atives/resenhaRegis
 const resenhaMyCoin =  require('../public/functions/resenha/atives/resenhaMyCoin');
 const resenhaRank = require('../public/functions/resenha/atives/resenhaRank');
 const resenhaBrawl = require('../public/functions/resenha/atives/resenhaBrawl');
+const resenhaVal = require('../public/functions/resenha/atives/resenhaVal');
 const resenhaPix = require('../public/functions/resenha/atives/resenhaPix');
 const resenhaRoubar = require('../public/functions/resenha/atives/resenhaSteal');
 const resenhaSlot = require('../public/functions/resenha/atives/resenhaSlot');
@@ -174,7 +175,7 @@ function start(client) {
                 await resenhaBrawl(await client, await message, command);
             }
             else if ( command.substring(0,4) === ",val" && message.chatId === resenhaId ) {
-                await resenhaBrawl(await client, await message, command);
+                await resenhaVal(await client, await message, command);
             }
             else if ( command.substring(0,4) === ",reg" ) {
                 await resenhaRegister(await client, await message, command);

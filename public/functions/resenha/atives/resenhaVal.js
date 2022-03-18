@@ -4,7 +4,7 @@ module.exports = async function(client, message, command) {
     "5528999566204", "5528992981473", "5528999295771"];
     
     let contacts = "";
-    const text = command.substring(7, command.length);
+    const text = command.substring(5, command.length);
     valorosos.forEach(element => {
         contacts += "@" + element + " ";
     });
