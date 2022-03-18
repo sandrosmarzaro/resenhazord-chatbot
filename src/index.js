@@ -173,7 +173,7 @@ function start(client) {
             else if ( command.substring(0,6) === ",brawl" && message.chatId === resenhaId ) {
                 await resenhaBrawl(await client, await message, command);
             }
-            else if ( command.substring(0,6) === ",val" && message.chatId === resenhaId ) {
+            else if ( command.substring(0,4) === ",val" && message.chatId === resenhaId ) {
                 await resenhaBrawl(await client, await message, command);
             }
             else if ( command.substring(0,4) === ",reg" ) {
