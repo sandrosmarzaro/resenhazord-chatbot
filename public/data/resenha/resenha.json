@@ -277,7 +277,7 @@
 		"phone": "5528999223882",
 		"index": 13,
 		"name": "Sandro",
-		"coin": 3242.05,
+		"coin": 3243.05,
 		"occurences": [
 			{
 				"day": 5,
@@ -661,6 +661,27 @@
 		"phone": "5528999099842",
 		"index": 31,
 		"name": "Mariana",
+		"coin": 0,
+		"occurences": [
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			},
+			{
+				"day": 0,
+				"occurence": 0
+			}
+		]
+	},
+	{
+		"id": "5528999566204@c.us",
+		"phone": "5528999566204",
+		"index": 32,
+		"name": "Heitor",
 		"coin": 0,
 		"occurences": [
 			{
