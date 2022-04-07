@@ -42,4 +42,7 @@ https://cloud.google.com/speech-to-text/docs/languages
 
 *,img*
 - Receba uma imagem aleatória NSFW da Rule34
+
+*,porn*
+- Receba um vídeo aleatório NSFW do PornHub 
 `

@@ -9,7 +9,7 @@ const all = require('../public/functions/general/all');
 const ban = require('../public/functions/general/ban');
 const add = require('../public/functions/general/add');
 const img = require('../public/functions/general/img');
-// const porn = require('../public/functions/general/pornhub');
+const porn = require('../public/functions/general/pornhub');
 const sticker = require('../public/functions/general/sticker');
 const tts = require('../public/functions/general/tts');
 const instagram = require('../public/functions/general/instagram');
@@ -140,9 +140,7 @@ function start(client) {
                 await img(await client, await message);
             }
             else if ( command === ",porn" ) {
-                // await porn(await client, await message);
-                await client.sendText(await message.chatId, 
-                `Função em desenvolvimento precoce insolente...`);
+                await porn(await client, await message);
             }
             else if ( command === ",stic" || command === ",sticc" ){  
                 await sticker(await client, await message, command);

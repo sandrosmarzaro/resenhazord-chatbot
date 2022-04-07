@@ -9,6 +9,7 @@
     "google-api-wrapper": "^1.12.0",
     "google-tts-api": "^2.0.2",
     "instagram-url-direct": "^1.0.9",
+    "m3u8-to-mp4": "^1.0.0",
     "puppeteer": "^13.5.1",
     "sharp": "^0.29.3",
     "sinon-stories": "^1.0.3",
