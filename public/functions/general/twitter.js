@@ -3,7 +3,14 @@ module.exports = async function (client, message, command) {
     const link = command.substring(4, command.length);
     
     videoUrlLink.twitter.getInfo(link, {}, async (error, info) => {
-        if (error) console.error(error);
+        if (error) {
+            console.error(error);
+            await client.reply(
+                await message.chatId,
+                `O link deve ser de um video!`,
+                await message.messageId
+            );
+        }
         else {
             let linkMp4;
             let birateBigger;
@@ -22,10 +29,6 @@ module.exports = async function (client, message, command) {
                     linkMp4 = element.url;
                 }
             });
-            // await client.sendText(
-            //     await message.chatId,
-            //     `Link:\n${linkMp4}`
-            // );
             await client.sendFile(
                 await message.chatId, 
                 linkMp4, 
