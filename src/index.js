@@ -23,6 +23,7 @@ const serverStats = require('../public/functions/general/serverStats');
 const stealGroup = require('../public/functions/general/stealGroup');
 const welcome = require('../public/functions/general/welcome');
 const commandNotFound = require('../public/functions/general/commandNotFound');
+const browserArgs = require('../public/scripts/browserArgs');
 
 // const resenhaDrive = require('../public/functions/resenha/atives/resenhaDrive');
 const resenhaMenu = require('../public/scripts/resenhaMenu');
@@ -43,59 +44,8 @@ venom.create(
         disableWelcome: true,
         multidevice: true,
         useChrome: true, 
-        browserArgs: [ 
-            '--log-level=3',
-            '--no-default-browser-check',
-            '--disable-site-isolation-trials',
-            '--no-experiments',
-            '--ignore-gpu-blacklist',
-            '--ignore-certificate-errors',
-            '--ignore-certificate-errors-spki-list',
-            '--disable-gpu',
-            '--disable-extensions',
-            '--disable-default-apps',
-            '--enable-features=NetworkService',
-            '--disable-setuid-sandbox',
-            '--no-sandbox',
-            '--disable-webgl',
-            '--disable-infobars',
-            '--window-position=0,0',
-            '--ignore-certifcate-errors',
-            '--ignore-certifcate-errors-spki-list',
-            '--ignore-ssl-errors',
-            '--disable-threaded-animation',
-            '--disable-threaded-scrolling',
-            '--disable-in-process-stack-traces',
-            '--disable-histogram-customizer',
-            '--disable-gl-extensions',
-            '--disable-composited-antialiasing',
-            '--disable-canvas-aa',
-            '--disable-3d-apis',
-            '--disable-accelerated-2d-canvas',
-            '--disable-accelerated-jpeg-decoding',
-            '--disable-accelerated-mjpeg-decode',
-            '--disable-app-list-dismiss-on-blur',
-            '--disable-accelerated-video-decode',
-            '--single-process',
-            '--disable-dev-shm-usage',
-            '--disable-gl-drawing-for-tests',
-            '--incognito',
-            '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36',
-            '--aggressive-cache-discard',
-            '--disable-cache',
-            '--disable-application-cache',
-            '--disable-offline-load-stale-cache',
-            '--disk-cache-size=0',
-            '--disable-background-networking',
-            '--disable-sync',
-            '--disable-translate',
-            '--hide-scrollbars',
-            '--metrics-recording-only',
-            '--mute-audio',
-            '--no-first-run',
-            '--safebrowsing-disable-auto-update',
-            '--disable-notifications'
-        ]
+        logQR: true,
+        browserArgs: browserArgs
     }
 ).then((client) => start(client));
 
