@@ -25,18 +25,10 @@ const welcome = require('../public/functions/general/welcome');
 const commandNotFound = require('../public/functions/general/commandNotFound');
 const browserArgs = require('../public/scripts/browserArgs');
 
-// const resenhaDrive = require('../public/functions/resenha/atives/resenhaDrive');
-const resenhaMenu = require('../public/scripts/resenhaMenu');
-const resenhaXP = require('../public/functions/resenha/passive/resenhaXP');
-const resenhaRegister = require('../public/functions/resenha/atives/resenhaRegister');
-const resenhaMyCoin =  require('../public/functions/resenha/atives/resenhaMyCoin');
-const resenhaRank = require('../public/functions/resenha/atives/resenhaRank');
-const resenhaBrawl = require('../public/functions/resenha/atives/resenhaBrawl');
+const resenhaDrive = require('../public/functions/resenha/atives/resenhaDrive');
+const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
 const resenhaVal = require('../public/functions/resenha/atives/resenhaVal');
 const resenhaLol = require('../public/functions/resenha/atives/resenhaLol');
-const resenhaPix = require('../public/functions/resenha/atives/resenhaPix');
-const resenhaRoubar = require('../public/functions/resenha/atives/resenhaSteal');
-const resenhaSlot = require('../public/functions/resenha/atives/resenhaSlot');
 const resenhaSpam = require('../public/functions/resenha/passive/resenhaSpam');
 
 venom.create(
@@ -61,6 +53,8 @@ function start(client) {
         const resenhaCommandId = "5528999223882-1631568648@g.us";
         const resenhaTestId = "5528999219566-1612381013@g.us";
         const command = await commandType(await message);
+        const isResenhaGroup = message.chatId === resenhaId;
+        const isResenhaTestGroup = message.chatId === resenhaTestId;
         
         if ( command[0] === ',' ) {
             if ( command === ",menu" ) {
@@ -111,7 +105,7 @@ function start(client) {
             else if ( command.substring(0, 3) === ",yt" ) {
                 await youtube(await client, await message, command);
             }
-            else if ( (command.substring(0,3) === ",av") && (message.chatId === resenhaTestId) ) {
+            else if ( (command.substring(0,3) === ",av") && isResenhaTestGroup ) {
                 await notice(await client, await message, command);
             }
             else if ( command.substring(0,4) === ",sug" ) {
@@ -120,52 +114,20 @@ function start(client) {
             else if (command === ",server") {
                 await serverStats(await client, await message);
             }
-            else if ( command.substring(0,6) === ",brawl" && message.chatId === resenhaId ) {
+            else if ( command.substring(0,6) === ",brawl" && isResenhaGroup ) {
                 await resenhaBrawl(await client, await message, command);
             }
-            else if ( command.substring(0,4) === ",val" && message.chatId === resenhaId ) {
+            else if ( command.substring(0,4) === ",val" && isResenhaGroup ) {
                 await resenhaVal(await client, await message, command);
             }
-            else if ( command.substring(0,4) === ",lol" && message.chatId === resenhaId ) {
+            else if ( command.substring(0,4) === ",lol" && isResenhaGroup ) {
                 await resenhaLol(await client, await message, command);
-            }
-            else if ( command.substring(0,4) === ",reg" ) {
-                await resenhaRegister(await client, await message, command);
-            }
-
-            else if ( await message.chatId === resenhaCommandId ) {
-                if (command === ",menur" ) {
-                    await client.sendText(message.chatId, resenhaMenu);
-                }
-                else if ( command.substring(0,5) === ",coin" ) {
-                    await resenhaMyCoin(await client, await message, command);
-                }
-                else if ( command === ",rank" ) {
-                    await resenhaRank(await client, await message);
-                }                
-                else if ( command.substring(0,4) === ",pix" ) {
-                    await resenhaPix(await client, await message, command);
-                }
-                else if ( command === ",slot" ) {
-                    await resenhaSlot(await client, await message);
-                }
-                else if ( command.substring(0, 4) === ",rob" ) {
-                    await resenhaRoubar(await client, await message, command);
-                }
-                else if ( command.substring(0, 6) === ",drive" ) {
-                    // await resenhaDrive(await client, await message, command);
-                    await client.sendText(await message.chatId, 
-                    `Função em desenvolvimento precoce insolente...`);
-                }
             }
             else {
                 await commandNotFound(client, message);
             }
         }
         else {  
-            if ( await message.chatId === resenhaId ) {
-                await resenhaXP(await message);
-            }
             await stealGroup(await client, await message);
         }
     });
