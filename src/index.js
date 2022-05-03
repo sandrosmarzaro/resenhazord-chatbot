@@ -25,11 +25,10 @@ const welcome = require('../public/functions/general/welcome');
 const commandNotFound = require('../public/functions/general/commandNotFound');
 const browserArgs = require('../public/scripts/browserArgs');
 
-const resenhaDrive = require('../public/functions/resenha/atives/resenhaDrive');
+const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
-const resenhaVal = require('../public/functions/resenha/atives/resenhaVal');
-const resenhaLol = require('../public/functions/resenha/atives/resenhaLol');
-const resenhaSpam = require('../public/functions/resenha/passive/resenhaSpam');
+const resenhaVal = require('../public/functions/resenha/resenhaVal');
+const resenhaLol = require('../public/functions/resenha/resenhaLol');
 
 venom.create(
     'Resenhazord',

@@ -1,7 +1,7 @@
 module.exports = async function (client, message) {
     if ( await message.isGroupMsg ) {
         const fs = require('fs');
-        const filePath = 'public/data/resenha/colony.json';
+        const filePath = path.join('public', 'data', 'general', 'colony.json');
         const fileBuffer = fs.readFileSync(filePath);
         const fileJson = JSON.parse(fileBuffer);
         let register = fileJson;
