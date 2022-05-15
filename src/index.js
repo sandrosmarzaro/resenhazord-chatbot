@@ -24,6 +24,7 @@ const stealGroup = require('../public/functions/general/stealGroup');
 const welcome = require('../public/functions/general/welcome');
 const commandNotFound = require('../public/functions/general/commandNotFound');
 const browserArgs = require('../public/scripts/browserArgs');
+const divina = require('../public/functions/general/divina');
 
 const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
@@ -111,6 +112,9 @@ function start(client) {
             }
             else if (command === ",server") {
                 await serverStats(await client, await message);
+            }
+            else if (command === ",divina") {
+                await divina(await client, await message);
             }
             else if ( command.substring(0,6) === ",brawl" && isResenhaGroup ) {
                 await resenhaBrawl(await client, await message, command);
