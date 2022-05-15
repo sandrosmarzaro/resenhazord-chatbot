@@ -49,7 +49,6 @@ function start(client) {
 
     client.onMessage(async (message) => {
         const resenhaId = "5528999670808-1558280621@g.us";
-        const resenhaCommandId = "5528999223882-1631568648@g.us";
         const resenhaTestId = "5528999219566-1612381013@g.us";
         const command = await commandType(await message);
         const isResenhaGroup = message.chatId === resenhaId;
