@@ -2,7 +2,7 @@ module.exports = async function(client, message) {
     const path = require('path');
     const fs = require('fs');
     const filePathString = path.join('..', '..', 'scripts', 'swearingString.js');
-    const filePathCount = path.join('public', 'data', 'general', 'swearing.json');
+    const filePathCount = path.join('public', 'data', 'jsons', 'swearing.json');
 
     const swearingString = require(filePathString);
     let swearingArray = swearingString.split(",");

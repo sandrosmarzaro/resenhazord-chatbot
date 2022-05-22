@@ -18,11 +18,13 @@ module.exports = async function (client, message, command) {
     );
 
     const fs = require('fs');
-    const filePath = "public/data/sugestion.json";
-    
+    const filePath = path.join('public', 'data', 'jsons', 'sugestion.json');
     const jsonString = fs.readFileSync(filePath, 'utf-8');
     const fileJson = JSON.parse(jsonString)
     // fs.writeFile(path, ,(err) => {console.error});
 
-    await client.sendText(message.chatId, `Sua sugestão/aviso foi enviada com sucesso!\nObrigado pela colaboração!`);
+    await client.sendText(
+        message.chatId, 
+        `Sua sugestão/aviso foi enviada com sucesso!\nObrigado pela colaboração!`
+    );
 }
