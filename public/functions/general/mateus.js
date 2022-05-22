@@ -1,18 +1,23 @@
 module.exports = async function(client, message) {
     const path = require('path');
-    const filePath = path.join('..', '..', 'scripts', 'swearingString.js');
-    const swearingString = require(filePath);
+    const fs = require('fs');
+    const filePathString = path.join('..', '..', 'scripts', 'swearingString.js');
+    const filePathCount = path.join('public', 'data', 'general', 'swearing.json');
+
+    const swearingString = require(filePathString);
     let swearingArray = swearingString.split(",");
     const maxSwearing = swearingArray.length;
-    const randomIndex = Number.parseInt(Math.random() * maxSwearing);
 
-    let m = swearingArray.length, t, i;
-    while (m) {
-        i = Math.floor(Math.random() * m--);
-        t = swearingArray[m];
-        swearingArray[m] = swearingArray[i];
-        swearingArray[i] = t;
-    }
-    const swearing = swearingArray[randomIndex];
-    await client.sendText(message.chatId, `Mateus vocé é${swearing}`);
+    const fileBuffer = fs.readFileSync(filePathCount, 'utf-8');
+    const fileJson = JSON.parse(fileBuffer);
+    let swearingCount = fileJson;
+    
+    index = swearingCount.index;
+    swearingCount.index >= maxSwearing ? swearingCount.index = 0 : swearingCount.index++;
+    
+    const fileString = JSON.stringify(swearingCount);
+    fs.writeFileSync(filePathCount, fileString);
+
+    const swearing = swearingArray[index];
+    await client.sendText(message.chatId, `Mateus você é${swearing}`);
 }
