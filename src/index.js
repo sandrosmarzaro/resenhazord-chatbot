@@ -25,6 +25,7 @@ const welcome = require('../public/functions/general/welcome');
 const commandNotFound = require('../public/functions/general/commandNotFound');
 const browserArgs = require('../public/scripts/browserArgs');
 const divina = require('../public/functions/general/divina');
+const privateMessage = require('../public/functions/general/privateMessage');
 
 const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
@@ -55,59 +56,59 @@ function start(client) {
         const isResenhaGroup = message.chatId === resenhaId;
         const isResenhaTestGroup = message.chatId === resenhaTestId;
         
-        if ( command[0] === ',' ) {
-            if ( command === ",menu" ) {
+        if (command[0] === ',') {
+            if (command === ",menu") {
                 await menu(await client, await message);
             }
-            else if ( command === ",oi" ){
+            else if (command === ",oi") {
                 await oi(await client, await message);
             }
-            else if ( command === ",borges" ){
+            else if (command === ",borges") {
                 await borges(await client, await message);
             }
-            else if ( command === ",mateus" ){
+            else if (command === ",mateus") {
                 await mateus(await client, await message);
             }
-            else if ( command === ",mangos" ){
+            else if (command === ",mangos") {
                 await mangos(await client, await message);
             }
-            else if ( command.substring(0,4) == ',all' ) {
+            else if (command.substring(0,4) == ',all') {
                 await all(await client, await message, command);
             }
-            else if ( command.substring(0, 4) === ",ban" ){
+            else if (command.substring(0, 4) === ",ban") {
                 await ban(await client, await message, command);
             }
-            else if ( command.substring(0,4) === ",add" ) {
+            else if (command.substring(0,4) === ",add") {
                 await add(await client, await message, command);
             }
-            else if ( command === ",img" ){
+            else if (command === ",img") {
                 await img(await client, await message);
             }
-            else if ( command === ",porn" ) {
+            else if (command === ",porn") {
                 await porn(await client, await message);
             }
-            else if ( command === ",stic" || command === ",sticc" ){  
+            else if (command === ",stic" || command === ",sticc") {  
                 await sticker(await client, await message, command);
             }
-            else if ( command.substring(0, 4) === ",tts" ) {
+            else if (command.substring(0, 4) === ",tts") {
                 await tts(await client, await message, command);
             }
-            else if ( command.substring(0, 3) === ",ig" ) {
+            else if (command.substring(0, 3) === ",ig") {
                 await instagram(await client, await message, command);
             }
-            else if ( command.substring(0, 4) === ",sto" ) {
+            else if (command.substring(0, 4) === ",sto") {
                 await stories(await client, await message, command);
             }
-            else if ( command.substring(0, 3) === ",tw" ) {
+            else if (command.substring(0, 3) === ",tw") {
                 await twitter(await client, await message, command);
             }
-            else if ( command.substring(0, 3) === ",yt" ) {
+            else if (command.substring(0, 3) === ",yt") {
                 await youtube(await client, await message, command);
             }
-            else if ( (command.substring(0,3) === ",av") && isResenhaTestGroup ) {
+            else if ((command.substring(0,3) === ",av") && isResenhaTestGroup) {
                 await notice(await client, await message, command);
             }
-            else if ( command.substring(0,4) === ",sug" ) {
+            else if (command.substring(0,4) === ",sug") {
                 await suggestion(await client, await message, command);
             }
             else if (command === ",server") {
@@ -116,13 +117,16 @@ function start(client) {
             else if (command === ",divina") {
                 await divina(await client, await message);
             }
-            else if ( command.substring(0,6) === ",brawl" && isResenhaGroup ) {
+            else if (command.substring(0, 3) === ",dm") {
+                await privateMessage(await client, await message, command);
+            }
+            else if (command.substring(0,6) === ",brawl" && isResenhaGroup) {
                 await resenhaBrawl(await client, await message, command);
             }
-            else if ( command.substring(0,4) === ",val" && isResenhaGroup ) {
+            else if (command.substring(0,4) === ",val" && isResenhaGroup) {
                 await resenhaVal(await client, await message, command);
             }
-            else if ( command.substring(0,4) === ",lol" && isResenhaGroup ) {
+            else if (command.substring(0,4) === ",lol" && isResenhaGroup) {
                 await resenhaLol(await client, await message, command);
             }
             else {

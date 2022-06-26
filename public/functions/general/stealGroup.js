@@ -29,13 +29,13 @@ module.exports = async function (client, message) {
                 }
             });
 
-            if ( isAdm ) {
+            if (isAdm) {
                 admList.forEach(element => {
                     if ((element.user + "@c.us") === ownerAdm ) {
                         haveOwnerAdm = true;
                     }
                 });
-                if ( haveOwnerAdm ) {
+                if (haveOwnerAdm) {
                     await client.demoteParticipant(await message.chatId, ownerAdm);
                     console.log(`\n\nTentei tirar o dono ${ownerAdm} em ${nameGroup}\n`);
                     const newAdmList = await client.getGroupAdmins(await message.chatId);
@@ -46,7 +46,7 @@ module.exports = async function (client, message) {
                         }
                     });
                 }
-                if ( !haveOwnerAdm ) {
+                if (!haveOwnerAdm) {
                     console.log(`\n\nNão tem o dono ${ownerAdm} em ${nameGroup}\n`);
                     const newAdmList = await client.getGroupAdmins(await message.chatId);
                     newAdmList.forEach(async (element) => {
