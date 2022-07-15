@@ -26,6 +26,7 @@ const commandNotFound = require('../public/functions/general/commandNotFound');
 const browserArgs = require('../public/scripts/browserArgs');
 const divina = require('../public/functions/general/divina');
 const privateMessage = require('../public/functions/general/privateMessage');
+const getOnceVideo = require('../public/functions/general/getOnceVideo');
 
 const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
@@ -55,7 +56,7 @@ function start(client) {
         const command = await commandType(await message);
         const isResenhaGroup = message.chatId === resenhaId;
         const isResenhaTestGroup = message.chatId === resenhaTestId;
-        
+
         if (command[0] === ',') {
             if (command === ",menu") {
                 await menu(await client, await message);
@@ -128,6 +129,9 @@ function start(client) {
             }
             else if (command.substring(0,4) === ",lol" && isResenhaGroup) {
                 await resenhaLol(await client, await message, command);
+            }
+            else if (command.substring(0,4) === ",vid") {
+                await getOnceVideo(await client, await message, command);
             }
             else {
                 await commandNotFound(client, message);
