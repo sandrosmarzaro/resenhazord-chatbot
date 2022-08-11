@@ -27,6 +27,7 @@ const browserArgs = require('../public/scripts/browserArgs');
 const divina = require('../public/functions/general/divina');
 const privateMessage = require('../public/functions/general/privateMessage');
 const getOnceVideo = require('../public/functions/general/getOnceVideo');
+const beer = require('../public/functions/general/beer');
 
 const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
@@ -132,6 +133,9 @@ function start(client) {
             }
             else if (command.substring(0,4) === ",vid") {
                 await getOnceVideo(await client, await message, command);
+            }
+            else if (command.substring(0,5) === ",beer") {
+                await beer(await client, await message, command);
             }
             else {
                 await commandNotFound(client, message);

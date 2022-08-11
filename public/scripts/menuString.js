@@ -31,6 +31,9 @@ module.exports = `\t\t\t*_MENU DE COMANDOS_*
 - Receba um aúdio do texto que você escreveu na língua que desejar, consulte a coluna BCP-47 nesse sitepara saber os códigos de  língua
 https://cloud.google.com/speech-to-text/docs/languages
 
+*,vid*
+- Baixe um vídeo de visualização única
+
 *,ig* _<link>_
 - Receba o vídeo baixado do Instagram com o link especificado
 
@@ -39,6 +42,9 @@ https://cloud.google.com/speech-to-text/docs/languages
 
 *,yt* _<link>_
 - Receba o vídeo baixado do YouTube com o link especificado
+
+*,beer*
+- Receba um cerveja aleatória do punkapi
 
 *,img*
 - Receba uma imagem aleatória NSFW da Rule34
