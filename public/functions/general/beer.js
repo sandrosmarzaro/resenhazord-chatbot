@@ -5,7 +5,7 @@ module.exports = async function (client, message) {
 
     request(url, (error, response, body) => {
         if (error) {
-            client.sendMessage(
+            client.sendText(
                 message.chatId,
                 'Error ao tentar obter uma cerveja aleatória.'
             );

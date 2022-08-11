@@ -1,15 +1,22 @@
 module.exports = async function(client, message) {
     const os = require('os');
-    let cpus = os.cpus();
-    let freeMemory = os.freemem();
-    const uptime = os.uptime() / 3600;
 
-    cpus = (cpus[0].model).split('S');
-    cpus = cpus[0];
-    freeMemory /= 1024000;
-    await client.reply(
+    function convertByte2MegaByte(number) {
+        return (number / 1024) / 1024 ;
+    }
+
+    const totalmem = convertByte2MegaByte(os.totalmem()).toFixed(2);
+    const freemem = convertByte2MegaByte(os.freemem()).toFixed(2);
+    const usedmem = totalmem - freemem;
+    const usagePercent = (freemem / totalmem) * 100;
+    
+    await client.sendText(
         await message.chatId, 
-        `\t🗄 *RESENHAZORD SERVER* 🗄\n💻 _OS:_    \t${os.platform()} ${os.arch}\n💾 _MEM_: \t${freeMemory.toFixed(2)}MB FREE\n⚙ _CPU_:  \t${cpus}AF\n⏰ _ON_:    \t${uptime.toFixed(2)}h`,
-        await message.id
-        );
+        "\t🗄 *RESENHAZORD SERVER* 🗄\n\n" +
+        "🖥 *OS*: " + os.platform() + " " + os.release() +  "\n\n" +
+        "⚙️ *CPU*: " + os.cpus()[0].model + " " + os.endianness() + " " + os.arch() + "\n\n" +
+        "💾 *RAM*: " +  totalmem + " MB (" + usedmem + " MB usado)" + " " + 
+            usagePercent.toFixed(2) + "%\n\n" +
+        "⏱ *TIME*: " + (os.uptime() / 3600).toFixed(2) + "h"
+    );
 }

@@ -3,14 +3,15 @@ module.exports = `\t\t\t*_MENU DE COMANDOS_*
 *,oi*
 - Mande um oi pro Resenhazord
 
-*,mangos*
-- Descubra a chance de Mangos II nascer
+*,server*
+- Veja status do servidor
 
-*,mateus*
-- Xingue aleatóriamente o Mateus
+🧮 FUNÇÕES DE CONTAGEM 🧮
 
 *,borges*
 - Descubra quantos nargas Borges já fumou
+
+👥 FUNÇÕES DE GRUPO 👥
 
 *,all* _<texto>_
 - Mande uma mensagem marcando todos do grupo
@@ -20,6 +21,8 @@ module.exports = `\t\t\t*_MENU DE COMANDOS_*
 
 *,ban* _@pessoa_
 - Bane ou Indica alguém aleatório ou especificado
+
+💾 FUNÇÕES DE DOWNLOAD 💾
 
 *,stic* _<imagem ou gif>_
 - Faça uma figurinha sem corte com a imagem na mensagem
@@ -43,11 +46,22 @@ https://cloud.google.com/speech-to-text/docs/languages
 *,yt* _<link>_
 - Receba o vídeo baixado do YouTube com o link especificado
 
+🎲 FUNÇÕES ALEATÓRIAS 🎲
+
+*,mangos*
+- Descubra a chance de Mangos II nascer
+
+*,mateus*
+- Xingue aleatóriamente o Mateus
+
+*,film* _top_ ou _pop_
+- Receba o poster de um filme aleatório dos tops melhores notas ou de maior popularidade
+
 *,poke*
 - Receba um Pokémon aleatório
 
 *,beer*
-- Receba um cerveja aleatória do punkapi
+- Receba um cerveja aleatória
 
 *,img*
 - Receba uma imagem aleatória NSFW da Rule34

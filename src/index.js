@@ -29,6 +29,7 @@ const privateMessage = require('../public/functions/general/privateMessage');
 const getOnceVideo = require('../public/functions/general/getOnceVideo');
 const beer = require('../public/functions/general/beer');
 const pokemon = require('../public/functions/general/pokemon');
+const film = require('../public/functions/general/film');
 
 const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
@@ -140,6 +141,9 @@ function start(client) {
             }
             else if (command.substring(0,5) === ",poke") {
                 await pokemon(await client, await message);
+            }
+            else if (command.substring(0,5) === ",film") {
+                await film(await client, await message, await command);
             }
             else {
                 await commandNotFound(client, message);

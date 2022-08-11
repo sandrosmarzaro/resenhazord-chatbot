@@ -6,6 +6,7 @@
   "dependencies": {
     "@justalk/pornhub-api": "^3.5.0",
     "cucumber": "^6.0.7",
+    "dotenv": "^16.0.1",
     "ffmpeg": "^0.0.4",
     "google-api-wrapper": "^1.2.0",
     "google-tts-api": "^2.0.2",
