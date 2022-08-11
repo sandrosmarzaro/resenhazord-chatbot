@@ -43,6 +43,9 @@ https://cloud.google.com/speech-to-text/docs/languages
 *,yt* _<link>_
 - Receba o vídeo baixado do YouTube com o link especificado
 
+*,poke*
+- Receba um Pokémon aleatório
+
 *,beer*
 - Receba um cerveja aleatória do punkapi
 

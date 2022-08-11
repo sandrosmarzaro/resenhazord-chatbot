@@ -5,6 +5,10 @@ module.exports = async function (client, message) {
 
     request(url, (error, response, body) => {
         if (error) {
+            client.sendMessage(
+                message.chatId,
+                'Error ao tentar obter uma cerveja aleatória.'
+            );
             console.log(error);
         } else {
             const beer = JSON.parse(body);

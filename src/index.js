@@ -28,6 +28,7 @@ const divina = require('../public/functions/general/divina');
 const privateMessage = require('../public/functions/general/privateMessage');
 const getOnceVideo = require('../public/functions/general/getOnceVideo');
 const beer = require('../public/functions/general/beer');
+const pokemon = require('../public/functions/general/pokemon');
 
 const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
@@ -136,6 +137,9 @@ function start(client) {
             }
             else if (command.substring(0,5) === ",beer") {
                 await beer(await client, await message, command);
+            }
+            else if (command.substring(0,5) === ",poke") {
+                await pokemon(await client, await message);
             }
             else {
                 await commandNotFound(client, message);
