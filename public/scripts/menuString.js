@@ -48,6 +48,9 @@ https://cloud.google.com/speech-to-text/docs/languages
 
 🎲 FUNÇÕES ALEATÓRIAS 🎲
 
+*,d20*
+- Role um d20
+
 *,mangos*
 - Descubra a chance de Mangos II nascer
 
