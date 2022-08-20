@@ -1,0 +1,2896 @@
+[
+    {
+        "Nome": "Afrikaans (África Do Sul)",
+        "BCP-47": "Af-ZA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Afrikaans (África Do Sul)",
+        "BCP-47": "Af-ZA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Albanês (Albânia)",
+        "BCP-47": "Sq-AL",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Albanês (Albânia)",
+        "BCP-47": "Sq-AL",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Amárico (Etiópia)",
+        "BCP-47": "Am-ET",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Amárico (Etiópia)",
+        "BCP-47": "Am-ET",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Argélia)",
+        "BCP-47": "Ar-DZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Argélia)",
+        "BCP-47": "Ar-DZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Argélia)",
+        "BCP-47": "Ar-DZ",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Argélia)",
+        "BCP-47": "Ar-DZ",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Bahrein)",
+        "BCP-47": "Ar-BH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Bahrein)",
+        "BCP-47": "Ar-BH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Bahrein)",
+        "BCP-47": "Ar-BH",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Bahrein)",
+        "BCP-47": "Ar-BH",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Egito)",
+        "BCP-47": "Ar-EG",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Egito)",
+        "BCP-47": "Ar-EG",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Egito)",
+        "BCP-47": "Ar-EG",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Egito)",
+        "BCP-47": "Ar-EG",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Iraque)",
+        "BCP-47": "Ar-IQ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Iraque)",
+        "BCP-47": "Ar-IQ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Iraque)",
+        "BCP-47": "Ar-IQ",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Iraque)",
+        "BCP-47": "Ar-IQ",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Israel)",
+        "BCP-47": "Ar-IL",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Israel)",
+        "BCP-47": "Ar-IL",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Israel)",
+        "BCP-47": "Ar-IL",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Israel)",
+        "BCP-47": "Ar-IL",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Jordânia)",
+        "BCP-47": "Ar-JO",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Jordânia)",
+        "BCP-47": "Ar-JO",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Jordânia)",
+        "BCP-47": "Ar-JO",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Jordânia)",
+        "BCP-47": "Ar-JO",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Kuwait)",
+        "BCP-47": "Ar-KW",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Kuwait)",
+        "BCP-47": "Ar-KW",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Kuwait)",
+        "BCP-47": "Ar-KW",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Kuwait)",
+        "BCP-47": "Ar-KW",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Líbano)",
+        "BCP-47": "Ar-LB",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Líbano)",
+        "BCP-47": "Ar-LB",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Líbano)",
+        "BCP-47": "Ar-LB",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Líbano)",
+        "BCP-47": "Ar-LB",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Mauritânia)",
+        "BCP-47": "Ar-MR",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Mauritânia)",
+        "BCP-47": "Ar-MR",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Marrocos)",
+        "BCP-47": "Ar-MA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Marrocos)",
+        "BCP-47": "Ar-MA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Marrocos)",
+        "BCP-47": "Ar-MA",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Marrocos)",
+        "BCP-47": "Ar-MA",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Omã)",
+        "BCP-47": "Ar-OM",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Omã)",
+        "BCP-47": "Ar-OM",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Omã)",
+        "BCP-47": "Ar-OM",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Omã)",
+        "BCP-47": "Ar-OM",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Qatar)",
+        "BCP-47": "Ar-QA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Qatar)",
+        "BCP-47": "Ar-QA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Qatar)",
+        "BCP-47": "Ar-QA",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Qatar)",
+        "BCP-47": "Ar-QA",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Arábia Saudita)",
+        "BCP-47": "Ar-SA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Arábia Saudita)",
+        "BCP-47": "Ar-SA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Arábia Saudita)",
+        "BCP-47": "Ar-SA",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Arábia Saudita)",
+        "BCP-47": "Ar-SA",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Estado Da Palestina)",
+        "BCP-47": "Ar-PS",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Estado Da Palestina)",
+        "BCP-47": "Ar-PS",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Estado Da Palestina)",
+        "BCP-47": "Ar-PS",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Estado Da Palestina)",
+        "BCP-47": "Ar-PS",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Tunísia)",
+        "BCP-47": "Ar-TN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Tunísia)",
+        "BCP-47": "Ar-TN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Tunísia)",
+        "BCP-47": "Ar-TN",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Tunísia)",
+        "BCP-47": "Ar-TN",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Emirados Árabes Unidos)",
+        "BCP-47": "Ar-AE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Emirados Árabes Unidos)",
+        "BCP-47": "Ar-AE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Emirados Árabes Unidos)",
+        "BCP-47": "Ar-AE",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Emirados Árabes Unidos)",
+        "BCP-47": "Ar-AE",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Iêmen)",
+        "BCP-47": "Ar-YE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Iêmen)",
+        "BCP-47": "Ar-YE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Árabe (Iêmen)",
+        "BCP-47": "Ar-YE",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Árabe (Iêmen)",
+        "BCP-47": "Ar-YE",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Armênio (Armênia)",
+        "BCP-47": "Hy-AM",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Armênio (Armênia)",
+        "BCP-47": "Hy-AM",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Azerbaijano (Azerbaijão)",
+        "BCP-47": "Az-AZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Azerbaijano (Azerbaijão)",
+        "BCP-47": "Az-AZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Basco (Espanha)",
+        "BCP-47": "Eu-ES",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Basco (Espanha)",
+        "BCP-47": "Eu-ES",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Bengali (Bangladesh)",
+        "BCP-47": "Bn-BD",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Bengali (Bangladesh)",
+        "BCP-47": "Bn-BD",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Bengali (Índia)",
+        "BCP-47": "Bn-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Bengali (Índia)",
+        "BCP-47": "Bn-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Bósnio (Bósnia E Herzegovina)",
+        "BCP-47": "Bs-BA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Bósnio (Bósnia E Herzegovina)",
+        "BCP-47": "Bs-BA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Búlgaro (Bulgária)",
+        "BCP-47": "Bg-BG",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Búlgaro (Bulgária)",
+        "BCP-47": "Bg-BG",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Birmanês (Mianmar)",
+        "BCP-47": "My-MM",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Birmanês (Mianmar)",
+        "BCP-47": "My-MM",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Catalão (Espanha)",
+        "BCP-47": "Ca-ES",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Catalão (Espanha)",
+        "BCP-47": "Ca-ES",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Chinês, Cantonês (Tradicional, Hong Kong)",
+        "BCP-47": "Yue-Hant-HK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Chinês, Cantonês (Tradicional, Hong Kong)",
+        "BCP-47": "Yue-Hant-HK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Chinês, Mandarim (Simplificado, China)",
+        "BCP-47": "Zh (cmn-Hans-CN)",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Chinês, Mandarim (Simplificado, China)",
+        "BCP-47": "Zh (cmn-Hans-CN)",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Chinês, Mandarim (Tradicional, Taiwan)",
+        "BCP-47": "Zh-TW (cmn-Hant-TW)",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Chinês, Mandarim (Tradicional, Taiwan)",
+        "BCP-47": "Zh-TW (cmn-Hant-TW)",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Croata (Croácia)",
+        "BCP-47": "Hr-HR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Croata (Croácia)",
+        "BCP-47": "Hr-HR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Checo (República Tcheca)",
+        "BCP-47": "Cs-CZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Checo (República Tcheca)",
+        "BCP-47": "Cs-CZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Dinamarquês (Dinamarca)",
+        "BCP-47": "Da-DK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Dinamarquês (Dinamarca)",
+        "BCP-47": "Da-DK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Dinamarquês (Dinamarca)",
+        "BCP-47": "Da-DK",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Dinamarquês (Dinamarca)",
+        "BCP-47": "Da-DK",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Holandês (Bélgica)",
+        "BCP-47": "Nl-BE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Holandês (Bélgica)",
+        "BCP-47": "Nl-BE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Holandês (Holanda)",
+        "BCP-47": "Nl-NL",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Holandês (Holanda)",
+        "BCP-47": "Nl-NL",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Holandês (Holanda)",
+        "BCP-47": "Nl-NL",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Holandês (Holanda)",
+        "BCP-47": "Nl-NL",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Inglês (Austrália)",
+        "BCP-47": "En-AU",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Austrália)",
+        "BCP-47": "En-AU",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Austrália)",
+        "BCP-47": "En-AU",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Austrália)",
+        "BCP-47": "En-AU",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Austrália)",
+        "BCP-47": "En-AU",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Canadá)",
+        "BCP-47": "En-CA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Canadá)",
+        "BCP-47": "En-CA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Inglês (Gana)",
+        "BCP-47": "En-GH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Gana)",
+        "BCP-47": "En-GH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Hong Kong)",
+        "BCP-47": "En-HK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Hong Kong)",
+        "BCP-47": "En-HK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Índia)",
+        "BCP-47": "En-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Inglês (Índia)",
+        "BCP-47": "En-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Inglês (Índia)",
+        "BCP-47": "En-IN",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Índia)",
+        "BCP-47": "En-IN",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Irlanda)",
+        "BCP-47": "En-IE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Irlanda)",
+        "BCP-47": "En-IE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "English (Kenya)",
+        "BCP-47": "En-KE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "English (Kenya)",
+        "BCP-47": "En-KE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "English (New Zealand)",
+        "BCP-47": "En-NZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "English (New Zealand)",
+        "BCP-47": "En-NZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Nigéria)",
+        "BCP-47": "En-NG",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Nigéria)",
+        "BCP-47": "En-NG",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Paquistão)",
+        "BCP-47": "En-PK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Paquistão)",
+        "BCP-47": "En-PK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Filipinas)",
+        "BCP-47": "En-PH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Filipinas)",
+        "BCP-47": "En-PH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Inglês (Singapura)",
+        "BCP-47": "En-SG",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔",
+        "Emojis Falados": "✔"
+    },
+    {
+        "Nome": "Inglês (Singapura)",
+        "BCP-47": "En-SG",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "English (South Africa)",
+        "BCP-47": "En-ZA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "English (South Africa)",
+        "BCP-47": "En-ZA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Tanzânia)",
+        "BCP-47": "En-TZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Tanzânia)",
+        "BCP-47": "En-TZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Inglês (Reino Unido)",
+        "BCP-47": "En-GB",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Inglês (Reino Unido)",
+        "BCP-47": "En-GB",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Inglês (Reino Unido)",
+        "BCP-47": "En-GB",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Inglês (Reino Unido)",
+        "BCP-47": "En-GB",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Reino Unido)",
+        "BCP-47": "En-GB",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (Reino Unido)",
+        "BCP-47": "En-GB",
+        "Modelo": "Chamada Telefônica",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔",
+        "Emojis Falados": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Vídeo Aprimorado",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Conversa Médica",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Ditado Médico"
+    },
+    {
+        "Nome": "Inglês (EUA)",
+        "BCP-47": "En-US",
+        "Modelo": "Chamada Telefônica",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Estoniano (Estônia)",
+        "BCP-47": "Et-EE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Estoniano (Estônia)",
+        "BCP-47": "Et-EE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Filipino (Filipinas)",
+        "BCP-47": "Fil-PH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Filipino (Filipinas)",
+        "BCP-47": "Fil-PH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Finlandês (Finlândia)",
+        "BCP-47": "Fi-FI",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Finlandês (Finlândia)",
+        "BCP-47": "Fi-FI",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Finlandês (Finlândia)",
+        "BCP-47": "Fi-FI",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Finlandês (Finlândia)",
+        "BCP-47": "Fi-FI",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (Bélgica)",
+        "BCP-47": "Fr-BE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (Bélgica)",
+        "BCP-47": "Fr-BE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (Canadá)",
+        "BCP-47": "Fr-CA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (Canadá)",
+        "BCP-47": "Fr-CA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (Canadá)",
+        "BCP-47": "Fr-CA",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (Canadá)",
+        "BCP-47": "Fr-CA",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Francês (Canadá)",
+        "BCP-47": "Fr-CA",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (França)",
+        "BCP-47": "Fr-FR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Francês (França)",
+        "BCP-47": "Fr-FR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Francês (França)",
+        "BCP-47": "Fr-FR",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔",
+        "Emojis Falados": "✔"
+    },
+    {
+        "Nome": "Francês (França)",
+        "BCP-47": "Fr-FR",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Francês (França)",
+        "BCP-47": "Fr-FR",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Francês (França)",
+        "BCP-47": "Fr-FR",
+        "Modelo": "Chamada Telefônica",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔",
+        "Emojis Falados": "✔"
+    },
+    {
+        "Nome": "Francês (Suíça)",
+        "BCP-47": "Fr-CH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Francês (Suíça)",
+        "BCP-47": "Fr-CH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Galego (Espanha)",
+        "BCP-47": "Gl-ES",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Galego (Espanha)",
+        "BCP-47": "Gl-ES",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Georgiano (Geórgia)",
+        "BCP-47": "Ka-GE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Georgiano (Geórgia)",
+        "BCP-47": "Ka-GE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Alemão (Áustria)",
+        "BCP-47": "De-AT",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Alemão (Áustria)",
+        "BCP-47": "De-AT",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Alemão (Alemanha)",
+        "BCP-47": "De-DE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Alemão (Alemanha)",
+        "BCP-47": "De-DE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Alemão (Alemanha)",
+        "BCP-47": "De-DE",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Alemão (Alemanha)",
+        "BCP-47": "De-DE",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Alemão (Suíça)",
+        "BCP-47": "De-CH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Alemão (Suíça)",
+        "BCP-47": "De-CH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Grego (grego)",
+        "BCP-47": "El-GR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Grego (grego)",
+        "BCP-47": "El-GR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Gujarati (Índia)",
+        "BCP-47": "Gu-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Gujarati (Índia)",
+        "BCP-47": "Gu-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Hebraico (Israel)",
+        "BCP-47": "Iw-IL",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Hebraico (Israel)",
+        "BCP-47": "Iw-IL",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Hindi (Índia)",
+        "BCP-47": "Hi-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Hindi (Índia)",
+        "BCP-47": "Hi-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Hindi (Índia)",
+        "BCP-47": "Hi-IN",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Hindi (Índia)",
+        "BCP-47": "Hi-IN",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Húngaro (Hungria)",
+        "BCP-47": "Hu-HU",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Húngaro (Hungria)",
+        "BCP-47": "Hu-HU",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Islandês (Islândia)",
+        "BCP-47": "Is-IS",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Islandês (Islândia)",
+        "BCP-47": "Is-IS",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Indonésio (Indonésia)",
+        "BCP-47": "Id-ID",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Indonésio (Indonésia)",
+        "BCP-47": "Id-ID",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Indonésio (Indonésia)",
+        "BCP-47": "Id-ID",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Indonésio (Indonésia)",
+        "BCP-47": "Id-ID",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Italiano (Itália)",
+        "BCP-47": "It-IT",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Italiano (Itália)",
+        "BCP-47": "It-IT",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Italiano (Itália)",
+        "BCP-47": "It-IT",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Italiano (Itália)",
+        "BCP-47": "It-IT",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Italiano (Suíça)",
+        "BCP-47": "It-CH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Italiano (Suíça)",
+        "BCP-47": "It-CH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Japonês (Japão)",
+        "BCP-47": "Ja-JP",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Japonês (Japão)",
+        "BCP-47": "Ja-JP",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔"
+    },
+    {
+        "Nome": "Japonês (Japão)",
+        "BCP-47": "Ja-JP",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Japonês (Japão)",
+        "BCP-47": "Ja-JP",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Japonês (Japão)",
+        "BCP-47": "Ja-JP",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Japonês (Japão)",
+        "BCP-47": "Ja-JP",
+        "Modelo": "Chamada Telefônica",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Javanês (Indonésia)",
+        "BCP-47": "Jv-ID",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Javanês (Indonésia)",
+        "BCP-47": "Jv-ID",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Canarim (Índia)",
+        "BCP-47": "Kn-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Canarim (Índia)",
+        "BCP-47": "Kn-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Cazaque (Cazaquistão)",
+        "BCP-47": "Kk-KZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Cazaque (Cazaquistão)",
+        "BCP-47": "Kk-KZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Khmer (Camboja)",
+        "BCP-47": "Km-KH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Khmer (Camboja)",
+        "BCP-47": "Km-KH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Coreano (Coreia Do Sul)",
+        "BCP-47": "Ko-KR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Coreano (Coreia Do Sul)",
+        "BCP-47": "Ko-KR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Coreano (Coreia Do Sul)",
+        "BCP-47": "Ko-KR",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Coreano (Coreia Do Sul)",
+        "BCP-47": "Ko-KR",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Lao (Laos)",
+        "BCP-47": "Lo-LA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Lao (Laos)",
+        "BCP-47": "Lo-LA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Letão (Letônia)",
+        "BCP-47": "Lv-LV",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Letão (Letônia)",
+        "BCP-47": "Lv-LV",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Lituano (Lituânia)",
+        "BCP-47": "Lt-LT",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Lituano (Lituânia)",
+        "BCP-47": "Lt-LT",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Macedônio (Macedônia Do Norte)",
+        "BCP-47": "Mk-MK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Macedônio (Macedônia Do Norte)",
+        "BCP-47": "Mk-MK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Macedônio (Macedônia Do Norte)",
+        "BCP-47": "Mk-MK",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Macedônio (Macedônia Do Norte)",
+        "BCP-47": "Mk-MK",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Malaio (Malásia)",
+        "BCP-47": "Ms-MY",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Malaio (Malásia)",
+        "BCP-47": "Ms-MY",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Malaiala (Índia)",
+        "BCP-47": "Ml-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Malaiala (Índia)",
+        "BCP-47": "Ml-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Marathi (Índia)",
+        "BCP-47": "Mr-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Marathi (Índia)",
+        "BCP-47": "Mr-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Mongol (Mongólia)",
+        "BCP-47": "Mn-MN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Mongol (Mongólia)",
+        "BCP-47": "Mn-MN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Nepali (Nepal)",
+        "BCP-47": "Ne-NP",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Nepali (Nepal)",
+        "BCP-47": "Ne-NP",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Bokmål Norueguês (Noruega)",
+        "BCP-47": "No-NO",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Bokmål Norueguês (Noruega)",
+        "BCP-47": "No-NO",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Bokmål Norueguês (Noruega)",
+        "BCP-47": "No-NO",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Bokmål Norueguês (Noruega)",
+        "BCP-47": "No-NO",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Persa (Irã)",
+        "BCP-47": "Fa-IR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Persa (Irã)",
+        "BCP-47": "Fa-IR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Polonês (Polônia)",
+        "BCP-47": "Pl-PL",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Polonês (Polônia)",
+        "BCP-47": "Pl-PL",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Polonês (Polônia)",
+        "BCP-47": "Pl-PL",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Polonês (Polônia)",
+        "BCP-47": "Pl-PL",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Português (Brasil)",
+        "BCP-47": "Pt-BR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Português (Brasil)",
+        "BCP-47": "Pt-BR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Português (Brasil)",
+        "BCP-47": "Pt-BR",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Português (Brasil)",
+        "BCP-47": "Pt-BR",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Português (Brasil)",
+        "BCP-47": "Pt-BR",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Português (Brasil)",
+        "BCP-47": "Pt-BR",
+        "Modelo": "Chamada Telefônica",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔",
+        "Filtro De Linguagem Obscena": "✔",
+        "Pontuação Falada": "✔"
+    },
+    {
+        "Nome": "Português (Portugal)",
+        "BCP-47": "Pt-PT",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Português (Portugal)",
+        "BCP-47": "Pt-PT",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Português (Portugal)",
+        "BCP-47": "Pt-PT",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Português (Portugal)",
+        "BCP-47": "Pt-PT",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Punjabi (Gurmukhi, Índia)",
+        "BCP-47": "Pa-Guru-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Punjabi (Gurmukhi, Índia)",
+        "BCP-47": "Pa-Guru-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Romeno (Romênia)",
+        "BCP-47": "Ro-RO",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Romeno (Romênia)",
+        "BCP-47": "Ro-RO",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Romeno (Romênia)",
+        "BCP-47": "Ro-RO",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Romeno (Romênia)",
+        "BCP-47": "Ro-RO",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Russo (russo)",
+        "BCP-47": "Ru-RU",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Russo (russo)",
+        "BCP-47": "Ru-RU",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Russo (russo)",
+        "BCP-47": "Ru-RU",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Russo (russo)",
+        "BCP-47": "Ru-RU",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Russo (russo)",
+        "BCP-47": "Ru-RU",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Russo (russo)",
+        "BCP-47": "Ru-RU",
+        "Modelo": "Chamada Telefônica",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Sérvio (Sérvia)",
+        "BCP-47": "Sr-RS",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Sérvio (Sérvia)",
+        "BCP-47": "Sr-RS",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Cingalês (Sri Lanka)",
+        "BCP-47": "Si-LK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Cingalês (Sri Lanka)",
+        "BCP-47": "Si-LK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Eslovaco (Eslováquia)",
+        "BCP-47": "Sk-SK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Eslovaco (Eslováquia)",
+        "BCP-47": "Sk-SK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Esloveno (Eslovênia)",
+        "BCP-47": "Sl-SI",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Esloveno (Eslovênia)",
+        "BCP-47": "Sl-SI",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Espanhol (Argentina)",
+        "BCP-47": "Es-AR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Argentina)",
+        "BCP-47": "Es-AR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Bolívia)",
+        "BCP-47": "Es-BO",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Bolívia)",
+        "BCP-47": "Es-BO",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Chile)",
+        "BCP-47": "Es-CL",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Chile)",
+        "BCP-47": "Es-CL",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Colômbia)",
+        "BCP-47": "Es-CO",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Colômbia)",
+        "BCP-47": "Es-CO",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Costa Rica)",
+        "BCP-47": "Es-CR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Costa Rica)",
+        "BCP-47": "Es-CR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (República Dominicana)",
+        "BCP-47": "Es-DO",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (República Dominicana)",
+        "BCP-47": "Es-DO",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Equador)",
+        "BCP-47": "Es-EC",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Equador)",
+        "BCP-47": "Es-EC",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (El Salvador)",
+        "BCP-47": "Es-SV",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (El Salvador)",
+        "BCP-47": "Es-SV",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Guatemala)",
+        "BCP-47": "Es-GT",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Guatemala)",
+        "BCP-47": "Es-GT",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Honduras)",
+        "BCP-47": "Es-HN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Honduras)",
+        "BCP-47": "Es-HN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (México)",
+        "BCP-47": "Es-MX",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (México)",
+        "BCP-47": "Es-MX",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Nicarágua)",
+        "BCP-47": "Es-NI",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Nicarágua)",
+        "BCP-47": "Es-NI",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Panamá)",
+        "BCP-47": "Es-PA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Panamá)",
+        "BCP-47": "Es-PA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Paraguai)",
+        "BCP-47": "Es-PY",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Paraguai)",
+        "BCP-47": "Es-PY",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Peru)",
+        "BCP-47": "Es-PE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Peru)",
+        "BCP-47": "Es-PE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Porto Rico)",
+        "BCP-47": "Es-PR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Porto Rico)",
+        "BCP-47": "Es-PR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Espanha)",
+        "BCP-47": "Es-ES",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (Espanha)",
+        "BCP-47": "Es-ES",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (Espanha)",
+        "BCP-47": "Es-ES",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (Espanha)",
+        "BCP-47": "Es-ES",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (Espanha)",
+        "BCP-47": "Es-ES",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (EUA)",
+        "BCP-47": "Es-US",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (EUA)",
+        "BCP-47": "Es-US",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (EUA)",
+        "BCP-47": "Es-US",
+        "Modelo": "Chamada Telefônica Aprimorada",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (EUA)",
+        "BCP-47": "Es-US",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (EUA)",
+        "BCP-47": "Es-US",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (EUA)",
+        "BCP-47": "Es-US",
+        "Modelo": "Chamada Telefônica",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Espanhol (Uruguai)",
+        "BCP-47": "Es-UY",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Uruguai)",
+        "BCP-47": "Es-UY",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Venezuela)",
+        "BCP-47": "Es-VE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Espanhol (Venezuela)",
+        "BCP-47": "Es-VE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Sudanês(Indonésia)",
+        "BCP-47": "Su-ID",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Sudanês(Indonésia)",
+        "BCP-47": "Su-ID",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Swahili (Kenya)",
+        "BCP-47": "Sw-KE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Swahili (Kenya)",
+        "BCP-47": "Sw-KE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Swahili (Tanzania)",
+        "BCP-47": "Sw-TZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Swahili (Tanzania)",
+        "BCP-47": "Sw-TZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Sueco (Suécia)",
+        "BCP-47": "Sv-SE",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Sueco (Suécia)",
+        "BCP-47": "Sv-SE",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Tamil (Índia)",
+        "BCP-47": "Ta-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Tamil (Índia)",
+        "BCP-47": "Ta-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Tamil (Malásia)",
+        "BCP-47": "Ta-MY",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Tamil (Malásia)",
+        "BCP-47": "Ta-MY",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Tamil (Singapura)",
+        "BCP-47": "Ta-SG",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Tamil (Singapura)",
+        "BCP-47": "Ta-SG",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Tamil (Sri Lanka)",
+        "BCP-47": "Ta-LK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Tamil (Sri Lanka)",
+        "BCP-47": "Ta-LK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Telugu (Índia)",
+        "BCP-47": "Te-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Telugu (Índia)",
+        "BCP-47": "Te-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Tailandês (Tailândia)",
+        "BCP-47": "Th-TH",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Tailandês (Tailândia)",
+        "BCP-47": "Th-TH",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Tailandês (Tailândia)",
+        "BCP-47": "Th-TH",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Tailandês (Tailândia)",
+        "BCP-47": "Th-TH",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Turco (Turquia)",
+        "BCP-47": "Tr-TR",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Turco (Turquia)",
+        "BCP-47": "Tr-TR",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔",
+        "Nível De Confiança Por Palavra": "✔"
+    },
+    {
+        "Nome": "Turco (Turquia)",
+        "BCP-47": "Tr-TR",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Turco (Turquia)",
+        "BCP-47": "Tr-TR",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Ucraniano (Ucrânia)",
+        "BCP-47": "Uk-UA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Ucraniano (Ucrânia)",
+        "BCP-47": "Uk-UA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Ucraniano (Ucrânia)",
+        "BCP-47": "Uk-UA",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Ucraniano (Ucrânia)",
+        "BCP-47": "Uk-UA",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Urdu (Índia)",
+        "BCP-47": "Ur-IN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Urdu (Índia)",
+        "BCP-47": "Ur-IN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Urdu (Paquistão)",
+        "BCP-47": "Ur-PK",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Urdu (Paquistão)",
+        "BCP-47": "Ur-PK",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Uzbeque (Uzbequistão)",
+        "BCP-47": "Uz-UZ",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Uzbeque (Uzbequistão)",
+        "BCP-47": "Uz-UZ",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔"
+    },
+    {
+        "Nome": "Vietnamita (Vietnã)",
+        "BCP-47": "Vi-VN",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Vietnamita (Vietnã)",
+        "BCP-47": "Vi-VN",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Vietnamita (Vietnã)",
+        "BCP-47": "Vi-VN",
+        "Modelo": "Último Longo",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Vietnamita (Vietnã)",
+        "BCP-47": "Vi-VN",
+        "Modelo": "Último Curto",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔",
+        "Otimização": "✔"
+    },
+    {
+        "Nome": "Zulu (África Do Sul)",
+        "BCP-47": "Zu-ZA",
+        "Modelo": "Comando E Pesquisa",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    },
+    {
+        "Nome": "Zulu (África Do Sul)",
+        "BCP-47": "Zu-ZA",
+        "Modelo": "Padrão",
+        "Pontuação Automática": "✔",
+        "Diarização": "✔"
+    }
+]

@@ -1,4 +1,4 @@
-module.exports = `\t\t\t*_MENU DE COMANDOS_*
+module.exports = `\t\t\t📝 *_MENU DE COMANDOS_* 📝
 
 *,oi*
 - Mande um oi pro Resenhazord

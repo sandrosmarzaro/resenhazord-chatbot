@@ -31,6 +31,7 @@ const beer = require('../public/functions/general/beer');
 const pokemon = require('../public/functions/general/pokemon');
 const film = require('../public/functions/general/film');
 const d20 = require('../public/functions/general/d20');
+const ttsLanguages = require('../public/functions/general/ttsLanguages');
 
 const resenhaDrive = require('../public/functions/resenha/resenhaDrive');
 const resenhaBrawl = require('../public/functions/resenha/resenhaBrawl');
@@ -148,6 +149,9 @@ function start(client) {
             }
             else if (command.substring(0,4) === ",d20") {
                 await d20(await client, await message, await command);
+            }
+            else if (command.substring(0,5) === ",lang") {
+                await ttsLanguages(await client, await message);
             }
             else {
                 await commandNotFound(client, message);
